@@ -10,11 +10,11 @@ $(document).on("ready", function() {
 	})
   	.done(function(response) {
       $('.jumbotron').css({ height: ($(window).height()) +'px' });
-      importPolymerElements();
       makeMenu();
-      fixMenu();
+      importPolymerElements();
       makePages();
       applyClickEvent();
+      fixMenu();
 
      
   	})
