@@ -132,6 +132,7 @@
                     if(this.$.senderEmail.checkValidity()){
                         if(this.$.senderMSG.checkValidity()){
                             this.$.sendMSG.setAttribute("disabled", "true");
+                            this.$.sendMSG.setAttribute("on-tap", "");
                             this.$.sendMSG.setAttribute("class", "sendMSG_disable");
                             this.$.sendIcon.setAttribute("class", "ion-looping");
                             var emailData = {data :JSON.stringify({
