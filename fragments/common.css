@@ -1,0 +1,51 @@
+.title{
+        font-size: 2.4em;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 300;
+        color: #17B1D2;
+        
+      }    
+      .quote{
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 150%;
+        padding-top: 15px;
+        color: #333333;
+        margin-bottom: 20px;
+        
+      }
+      .quote p{
+        text-align: center;
+        font-size: 0.5em;
+        color: #333333;
+        opacity: 0.9;
+    }    
+      .section_title{
+        color: #17B1D2;
+        font-weight: bold;
+        padding-bottom: 20px;
+        font-size: 1.8em;
+        
+      }
+      h4{
+        font-weight: bold;
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        color: #333333;
+      }
+      p{
+        color:#333333;
+        opacity: 0.8;
+        margin: 2px;      
+      }
+      .element{
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: #FFF;
+      }
+      .page_item{
+          background-color: #eee;
+          padding: 20px 0px 20px 0;
+        }

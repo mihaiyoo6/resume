@@ -1,0 +1,71 @@
+<link rel="import" href="../js/libraries/components/polymer/polymer.html">
+<link rel="import" href="../js/libraries/components/paper-shadow/paper-shadow.html">
+
+
+
+<polymer-element name="page-careers">
+    <template>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="../css/ionicons.css" rel="stylesheet" />
+        <link href="common.css" rel="stylesheet"/>
+        <style> 
+
+        .bottom{
+            color: #17B1D2;
+            padding: 3px;
+        }
+        .bottom a {
+            color: #17B1D2;
+        }
+        .bottom a:hover {
+            color: #333;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        </style>
+        <div id="pcarrers-page" class="page_item">
+            <div class="container">
+                <div class="row quote ">
+                    <div class="col-md-3">
+                        <div class="title">CAREERS</div>
+                    </div>
+                    <div class="col-md-9 element">
+                        <span>{{quote.text}}</span><p>{{quote.author}}</p>
+                        <paper-ripple fit></paper-ripple>
+                        <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
+                    </div>
+                </div>    
+                <template repeat="{{career in data}}">
+                    <div class="row element">
+                        <div class="col-md-4">
+                            <h4>{{career.company}}</h4>
+                            <p class="period">{{career.period}}</p>
+                        </div>
+                        <div class="col-md-8">
+                            <h4>{{career.position}}</h4>
+                            <p>{{career.description}}</p>
+                            <div class="bottom">
+                                <i class="ion-link"></i><a href="http://{{career.company_website}}" target="_blank">{{career.company_website}}</a> | <i class="ion-android-location"></i> {{career.company_address}}
+                            </div>
+                        </div>
+                        <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
+                    </div>      
+                </template>
+            </div>
+            <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
+        </div>
+    </template>
+
+    <script>
+
+    Polymer('page-careers', {
+        ready: function() {
+            this.data = data.careers;
+            this.quote = data.quotes.careers; 
+        }
+    });
+
+    </script>
+
+</polymer-element>

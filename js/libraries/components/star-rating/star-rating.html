@@ -1,0 +1,170 @@
+<!-- Import Polymer -->
+<link rel="import" href="../polymer/polymer.html">
+
+
+<polymer-element name="star-rating" attributes="starCount votes votesSum url readyOnly">
+
+  <template>
+    <div id="starRating">
+    </div>
+
+    <style>
+      #starRating {
+        display: inline-block;
+      }
+      #starRating:hover{
+        display: inline-block;
+        margin-left: 2px;
+      }
+
+      .star {
+        display: inline-block;
+        width: 18px;
+        height: 17px;
+        margin-right: 5px;
+        background: url('images/rating1.png') no-repeat 0 -17px;
+      }
+
+      .star.check {
+        background-position:0 0;
+      }
+    </style>
+  </template>
+
+  <script>
+    Polymer('star-rating', {
+
+      // number of votes
+      votes           : 0,
+      // sum of all votes
+      votesSum        : 0,
+      // number of star
+      starCount       : 5,
+      // make the polymer ready only
+      readyOnly       : false,
+      // url to update Votes
+      url : '',
+
+      attached : function() {
+
+        var 
+
+          // cache this
+          self              = this,
+
+          // initial star value
+          starredNumber,
+
+          // cache stars child
+          stars             = [],
+
+          // cache star in loop
+          star,
+
+          // cache a elements
+          a,
+
+          // cache loop variables
+          i , k;
+
+
+        // create stars
+        for ( i = 0, k = self.starCount; i < k; i++ ) {
+          a = document.createElement('a');
+          a.href = '#';
+          a.className = 'star';
+          this.$.starRating.appendChild(a);
+          stars.push(a);
+        }
+
+        // calculate init value
+        function getStarredNumber() {
+
+          return Math.ceil( self.votesSum / self.votes ) - 1;
+
+        }
+
+        starredNumber = getStarredNumber();
+
+        // change the stars to the index
+        function changeTo( index ) {
+          var 
+
+            // cache star
+            star,
+
+            // cache new className
+            className;
+
+          for ( i = 0, k = self.starCount; i < k; i++ ) {
+            star = stars[i];
+
+            className = 'star';
+
+            if ( i <= index ) {
+              className += ' check';
+            }
+
+            star.className = className;
+          }
+        }
+
+        // show the initial star
+        changeTo( starredNumber );
+
+        for ( i = 0, k = this.starCount; i < k; i++ ) {
+          star = stars[i];
+          // set index
+          star.setAttribute('index', i);
+
+          // star hover event
+          star.addEventListener('mouseenter', function(e){
+
+            if ( self.readyOnly ) {
+              return false;
+            }
+
+            changeTo( parseInt(this.getAttribute('index')) );
+
+          }, false);
+
+          // star click event
+          star.addEventListener('click', function(e){
+            e.preventDefault();
+
+            var evt;
+
+            if ( self.readyOnly ) {
+              return false;
+            }
+
+            self.votesSum += parseInt( this.getAttribute('index') ) + 1;
+            self.votes++;
+
+            starredNumber = getStarredNumber();
+            changeTo( starredNumber );
+
+            self.readyOnly = true;
+
+            evt = new CustomEvent('rate');
+            self.dispatchEvent(evt);
+
+            return false;
+          }, false);
+        }
+
+        // when mouse leave, back to current value
+        self.addEventListener('mouseleave', function(){
+
+          if ( self.readyOnly ) {
+            return false;
+          }
+
+          changeTo( starredNumber );
+
+        }, false);
+      }
+    });
+  </script>
+
+</polymer-element>

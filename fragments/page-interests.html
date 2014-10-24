@@ -1,0 +1,39 @@
+<link rel="import" href="../js/libraries/components/polymer/polymer.html">
+<link rel="import" href="../js/libraries/components/paper-shadow/paper-shadow.html">
+
+
+<polymer-element name="page-interests">
+
+<template>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link href="common.css" rel="stylesheet"/>
+	<style> 
+
+	</style>
+	<div id="interests-page">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-8"><div class="head">Interests</div></div>				
+			</div>
+			<template repeat="{{interest in interests}}">
+				<div class="row">
+					<div class="col-md-8">{{interest.title}}</div>
+				</div>
+			</template>
+
+		</div>
+		<paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
+	</div>
+</template>
+
+<script>
+
+Polymer('page-interests', {
+	ready: function(){
+		this.interests = data.interests;
+	}
+});
+
+</script>
+
+</polymer-element>

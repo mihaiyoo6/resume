@@ -1,0 +1,185 @@
+<link rel="import" href="../js/libraries/components/polymer/polymer.html">
+
+<link rel="import" href="../js/libraries/components/paper-input/paper-input.html">
+
+
+
+<polymer-element name="page-contact">
+    <template>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="../css/ionicons.css" rel="stylesheet" />
+        <link href="common.css" rel="stylesheet"/>
+        <style> 
+
+        .sendMSG_enable {
+            background: #17B1D2;
+            color: white;
+            float: right;
+        }
+        .sendMSG_disable{
+            background: #5fcde2;
+            color: white;
+            float: right;
+        }
+        .sendMSG_err {
+            background: red;
+            color: white;
+            float: right;
+        }
+        #sendIcon{
+            margin-right: 5px;
+        }
+        #qr_code{
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;        
+            cursor: none;
+            transition:all 1s;
+            -webkit-transition:all 1s;
+            -moz-transition:all 1s;
+        }
+        #qr_code:hover{
+            border-radius: 0px;
+        }
+        .container{
+            overflow: hidden;
+        }
+        .contact_item{
+            font-size: 1.5em;
+        }
+        .contact_item a:link{
+            text-decoration: none;
+            color: #333;
+        }
+        .contact_item a:visited{
+            text-decoration: none;
+            color: #333;
+        }
+        .contact_item:hover{
+            color:#17B1D2;
+            font-size: 38;
+        }
+        .contact_item a:hover{
+            text-decoration: none;
+            color:#17B1D2;
+        }
+        .contact_icon{
+            font-size: 30px;
+            text-align: center;  
+            width: 60px;          
+        }
+        .custom{
+            width: 100%;
+            padding: 0px 20px 20px 20px;
+        }
+        paper-input.custom::shadow .focused-underline {
+          background-color: #17B1D2;
+        }
+        paper-input.custom[focused]::shadow .floated-label .label-text {
+          color: #17B1D2;
+        }
+
+        paper-input.custom::shadow .cursor {
+          background-color: #17B1D2;
+        }
+
+    </style>
+    <div id="contact-page" class="page_item">
+        <div class="container">
+            <div class="row quote">
+                <div class="col-md-3">
+                    <div class="title">Contact</div>
+                </div>
+                <div class="col-md-9 element">
+                    <span>{{quote.text}}</span><p>{{quote.author}}</p>
+                    <paper-ripple fit></paper-ripple>
+                    <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 element">   
+                    <table>   
+                        <template repeat="{{contact_item in data}}">
+                            <tr class="contact_item">
+                               <td class="contact_icon"> 
+                                    <span class="{{contact_item.icon}} "></span>
+                                </td>
+                                <td>
+                                    <a href="{{contact_item.link_type}}">{{contact_item.text}}</a>
+                                </td>
+                            </tr>
+                        </template>
+                    </table>
+                    <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow> 
+                </div>          
+                <div class="col-md-4">            
+                    <img id="qr_code"  class="img-circle img-responsive" src="../images/qr.png">
+                </div> 
+                <div class="col-md-4 element" id="contactForm">
+                    <div class="section_title">Contact me!</div>
+                    <form>
+                        <paper-input class="custom" floatingLabel label="Type your name here " equired error="This input requires a value!" id="senderName" required></paper-input>
+                        <paper-input class="custom" floatingLabel label="Type your email here " type="email" error="Input is not an email!" id="senderEmail" required></paper-input>
+                        <paper-input class="custom" floatingLabel multiline rows="3" label="Type your message here" id="senderMSG" required></paper-input>
+                        <paper-button  id="sendMSG" class="sendMSG_enable" role="button" tabindex="0" style="overflow: visible;" on-tap="{{sendEmail}}" ><i id="sendIcon" class="ion-paper-airplane"></i>Send</paper-button>
+                    </form>
+                    <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow> 
+                </div>         
+            </div>
+        </div>
+    </div>
+</template>
+    <script>
+        Polymer('page-contact', {
+            ready: function() {
+                this.data = data.contact_details;
+                this.quote = data.quotes.contact;
+            },
+            sendEmail: function(){
+                var self = this;
+                if(this.$.senderName.checkValidity()){
+                    if(this.$.senderEmail.checkValidity()){
+                        if(this.$.senderMSG.checkValidity()){
+                            this.$.sendMSG.setAttribute("disabled", "true");
+                            this.$.sendMSG.setAttribute("class", "sendMSG_disable");
+                            this.$.sendIcon.setAttribute("class", "ion-looping");
+                            var emailData = {data :JSON.stringify({
+                                name: this.$.senderName.value,
+                                email: this.$.senderEmail.value,
+                                text: this.$.senderMSG.value
+                                })
+                            }; 
+                                        
+                            $.ajax({
+                              type: "POST",
+                              url: "http://mijeamihai.com/emailForm/sendEmail.php",
+                              data: emailData,
+                              success: function(response){
+                                if(response.success){
+                                    console.log(response);
+                                    self.$.senderName.setAttribute('disabled', 'true');
+                                    self.$.senderEmail.setAttribute('disabled', 'true');
+                                    self.$.senderMSG.setAttribute('disabled', 'true');
+                                    self.$.sendIcon.setAttribute("class", "ion-checkmark-circled");                             
+                                }else{
+                                    self.$.sendIcon.setAttribute("class", "ion-close-circled");
+                                    self.$.sendMSG.setAttribute("class", "sendMSG_err");
+                                 }
+
+
+                              },
+                              dataType: 'json'
+                            });
+                        }else{
+                            this.$.senderMSG.focus()
+                        }
+                    }else{
+                        this.$.senderEmail.focus(); 
+                    }
+                }else{
+                   this.$.senderName.focus(); 
+                }
+            }
+        });
+    </script>
+</polymer-element>

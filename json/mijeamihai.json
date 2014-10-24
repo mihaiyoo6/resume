@@ -1,0 +1,429 @@
+{	"success": true,
+	
+	"pages":[
+		{
+			"index": 0,
+			"active": true,
+			"page_name":"Profile",
+			"data_trigger": "profile",
+			"icon": "ion-person-stalker",
+			"background_image":"",
+			"page_height": 0,
+			"polymer_element": "page-profile"
+			},
+		{
+			"index": 5,
+			"active": true,
+			"page_name":"Contact",
+			"data_trigger": "contact",
+			"icon": "ion-card",
+			"background_image":"contact.jpg",
+			"page_height": 400,
+			"polymer_element": "page-contact"
+
+			},
+		{
+			"index": 4,
+			"active": true,
+			"page_name":"Education",
+			"data_trigger": "education",
+			"icon": "ion-university",
+			"background_image":"education1.jpg",
+			"page_height": 400,
+			"polymer_element": "page-education"
+			},
+		{
+			"index": 3,
+			"active": true,
+			"page_name": "Careers",
+			"data_trigger": "careers",
+			"icon": "ion-clipboard",
+			"background_image":"office.jpg",
+			"page_height": 350,
+			"polymer_element": "page-careers"
+			},
+		{
+			"index": 2,
+			"active": true,
+			"page_name":"Abilities",
+			"data_trigger": "skills",
+			"icon": "ion-gear-b",
+			"background_image":"abilities.jpg",
+			"page_height": 400,
+			"polymer_element": "page-skills"
+			},
+		{
+			"index": 1,
+			"active": false,
+			"page_name":"Interests",
+			"data_trigger": "interests",
+			"icon": "ion-magnet",
+			"background_image":"interests.jpg",
+			"page_height": 500,
+			"polymer_element": "page-interests"
+			},
+		{
+			"index": 6,
+			"active": false,
+			"page_name":"Free time",
+			"data_trigger": "freetime",
+			"icon": "ion-beer",
+			"background_image":"6.jpg",
+			"page_height": 300,
+			"polymer_element": "page-freetime"
+		},
+		{
+			"index": 7,
+			"active": false,
+			"page_name": "Projects",
+			"data_trigger": "projects",
+			"icon": "ion-clipboard",
+			"background_image":"3.jpg",
+			"page_height": 300,
+			"polymer_element": "page-projects"
+			},
+		{
+			"index": 8,
+			"active": false,
+			"page_name": "Test",
+			"data_trigger": "test",
+			"icon": "ion-clipboard",
+			"background_image":"3.jpg",
+			"page_height": 300,
+			"polymer_element": "page-test"
+			}
+	],
+	"about":{
+		"first_name": "Mihai",
+		"middle_name": "",
+		"last_name": "Mijea",
+		"date_of_birth": "25 years",
+		"place_of_birth": "Fagaras",
+		"country_of_birth": "Roumania",
+		"biography": {
+			"title":"About me",
+			"title1": "Details",
+			"text":"I am software developer. I like to know latest news of technology to create things with the latest tools. I like to have everything in order and have well-defined goals to know how to plan my next steps.I love working in a team because you learn things from each member of the team, in a team should be many ideas, and things were going faster, but there are times when I prefer to work alone to put my own ideas into practice. When it comes to who is right if my opinion is the correct one support all the way in other case I can admite that I was wrong."},
+		"current_location": {
+			"title": "Current location",
+			"street": "Dirk Bonsstraat",
+			"house_number": 16,
+			"zipcode": "1063TZ",
+			"city": "Amsterdam",
+			"country": "The Netherlands",
+			"planet": "Earth"
+		},
+		"profile_img":"",
+		"quote":{
+			"text": "\"Intelligence without ambition is a bird without wings.\"",
+            "author": "Salvador Dali"
+		}
+	},
+	"contact_details":[{
+
+		"text":"mijeamihai@yahoo.com",
+		"icon": "ion-at",
+		"title": "Email",
+		"link_type": "mailto:mijeamihai@yahoo.com?Subject=[CV_Page]"
+	},{
+		"text":"+31 (0) 644 147 968",
+		"icon": "ion-ios7-telephone",
+		"title": "Dutch Phone",
+		"link_type": "tel:+31644147968"
+				
+	},{
+		"text":"+40766 400 685",
+		"icon": "ion-ios7-telephone-outline",
+		"title": "Roumanian Phone",
+		"link_type": "tel:+40766400685"
+				
+	},{
+		"text":"mihaiyoo6",
+		"icon": "ion-social-skype-outline",
+		"title":"Skype",
+		"link_type": "skype:mihaiyoo6?call"
+	},{
+		"text":"mijeamihai.com",
+		"icon": "ion-link",
+		"title": "Personal website",
+		"link_type": "http://mijeamihai.com"	
+	},{
+		"text":"linkedin.com/in/mijeamihai",
+		"icon":"ion-social-linkedin-outline",
+		"title": "Linkedin",
+		"link_type": "https://www.linkedin.com/in/mijeamihai"
+			
+	},{
+		"text": "facebook.com/mihaiyoo6",
+		"icon":"ion-social-facebook-outline",
+		"title": "Facebook",
+		"link_type": "https://www.facebook.com/mihaiyoo6"
+			
+	},{
+		"text":"youtube.com/user/mihaiyoo6",
+		"icon": "ion-social-youtube-outline",
+		"title": "Youtube",
+		"link_type": "https://www.youtube.com/user/mihaiyoo6"
+	}],
+	"educations":[
+		{
+			"university_name": "Transylvania University of Brasov",
+			"faculty_name": "Multi-regional program of  master study in e-Activities domain",
+			"specialization": "Specialization: E-health",
+			"period": "10.2012 – 06.2014",
+			"level": "Master degree",
+			"courses": ["Internet technologies",
+						"Platforms for e-activities",
+						"Web 2.0 / 3.0 technologies",
+						"Project management",
+						"System security for e-Activities",
+						"Standards for E-health information systems",
+						"Communications protocols"
+						],
+			"description":"e-START project overall objective is to create new learning opportunities and professional training at Masters level in the e-activities field in accordance with the needs of the digital economy. Achieved a multi-regional partnership between four universities in Romania.Specializations offered by this master program, held in low frequency regime, are considering developing a set of skills technological, economic and management."
+		},		
+		{
+			"university_name": "Transylvania University of Brasov",
+			"faculty_name": "Faculty of Electrical Engineering and Computer Science",
+			"specialization": "Specialization: Electronic systems and integrated communications",
+			"period": "10.2012 – 06.2014",
+			"level": "Master degree",
+			"courses": ["Mobile communications and mobile computing, ( LTE. WIMAX)",
+						"Distributed databases for telecommunications",
+						"Smart Grid Communications",
+						"Packet switching, circuits and public service",
+						"Quality of service and security of computer networks"
+						],
+			"description":"After the first four years I have been in contact with the foundation of telecommunications is the time to learn things more specific and topical. During these two years of study I learned about the latest in telecommunications standards such as LTE (4G), smart grid, distributed databases and more."
+		},
+		{
+			"university_name": "Transylvania University of Brasov",
+			"faculty_name": "Faculty of Electrical Engineering and Computer Science",
+			"specialization": "Specialization: Telecommunications Technologies and Systems",
+			"period": "10.2008 – 06.2012",
+			"level": "Bachelor's degree",
+			"courses": ["Cellular mobile communications, ( GSM GPRS 3G )",
+						"Radiolocation and radio navigation",
+						"Computer Networks",
+						"Packet switching, circuits and public service",
+						"Operating Systems ",
+						"Analogue Electronics",
+						"Digital Electronics"
+						],
+			"description":"This study cycle was divided into two parts. First two years I sutdii mathematics, physics, electronics and electrical basics. The next two years I started to learn things specific to telecommunications, such sons GSM(3G) network architecture, computer networks, digital electronics and more. Of course I got in touch and learning in telecommunications software development bases in JAVA programming"
+		}
+	],
+	"careers":[
+		{
+			"index": 0,
+			"company": "UnitApp is a brand of Digimarketing Systems Ltd.",
+			"company_address":"Falckstraat 15-29 1017 VV Amsterdam",
+			"company_website": "www.unitapp.com",
+			"position": "Internship Front-End Developer",
+			"period": "08.2014 – present",
+			"description": "After my moving to Amsterdam. I start working as an intern for UnitApp, here I make part of a young team that build an interesting concept. My job is to mplemented new features according to specifications on the application modular CMS and olso find and fix bugs in existing units and not in last place optimizing the code. Here I can improve my knowledge about HTML5/CSS3 ,JQuery and Bootstrap."
+		},{			
+			"index": 1,
+			"company":"ATRAXO Consulting & Development SCS",
+			"company_address":"Moldovei nr.10A Brasov Romania",
+			"company_website":"www.atraxo.com",
+			"position":"Junior Software Developer",
+			"period":"11.2013 – 06.2014",
+			"description":"This job means for me a new steep in my developer career. Here I take contact with MCV patterns and SVN practice. After an training my responsability was to create a prototype application using Sencha Touch framework (javascript mobile base framework). After that I start learning/using  Extjs 4 javascript framework with scope to update actual web interface of company application. Here olso I get in touch with back end JAVA programing and ORACLE databases."
+		},{
+			"index": 2,
+			"company":"S.C ZECE PLUS S.R.L",
+			"company_address":"Mihail Kogălniceanu 23, Brașov-Romania",
+			"company_website":"www.zcplus.ro",
+			"position":"Junior Software Developer",
+			"period":"04.2013 – 11.2013",
+			"description":"By this job I officially start my developer career. Here I was part of a team and the  first project started from strach was a virtual fitting room, for this project I use start to learn PHP and I take contact with javascript frameworks like JQuery. Next project in witch I participated was a E-learning platform, my jobs was to make the main interface for that platform (menus for courses/lessons, olso the tax methods, implementing a credit point system ). During this project, I gain new knowledge of the web technologies such as HTML and the CSS Javascript and PHP."
+		},{
+			"index": 3,
+			"company":"DCI for Commerce and Industry Romania SRL",
+			"company_address":"Transilvaniei Nr. 28 Brasov Romaina",
+			"company_website":"www.dci.de",
+			"position":"Data operator (insertion, validation and processing)",
+			"period":"11.2012 – 06.2013",
+			"description":" Operate, validate and processing data. Quality contrrol of data. Search and generate content for demo pages (Programs / Graphics / HTML Pages / Newsletters). Tools used: Internal interfecte for insert, HTML editor, Advance search engine tehnichs, Salesforce platform"
+		}
+	],
+	"skills":[
+		{	"index": 3,
+			"skill": "HTML",
+			"level": 4
+		},{	
+			"index": 5,
+			"skill": "CSS",
+			"level": 4
+		},{
+			"index": 0,
+			"skill": "Javascript",
+			"level": 4
+		},{
+			"index": 1,
+			"skill": "PHP",
+			"level": 3
+		},{
+			"index": 4,
+			"skill": "MySQL",
+			"level": 3
+		},{
+			"index": 11,
+			"skill": "JSON",
+			"level": 4
+		},{
+			"index": 7,
+			"skill": "Jquery",
+			"level": 4
+		},{
+			"index": 9,
+			"skill": "Bootstrap",
+			"level": 4
+		},{
+			"index": 8,
+			"skill": "MVC Pattern",
+			"level": 2
+		},{
+			"index": 10,
+			"skill": "JAVA",
+			"level": 2
+		},{
+			"index":6,
+			"skill":"Extjs",
+			"level":2
+		},{
+			"index": 12,
+			"skill": "Sencha Touch",
+			"level": 2
+		},{
+			"index": 13,
+			"skill": "Polymer by Google",
+			"level": 2
+		}
+	],
+	"languages":[
+		{
+			"language": "Romanian",
+			"level": 5,
+			"usage": "Mother tongue"
+		},{
+			"language": "English",
+			"level": 3,
+			"usage": "Daily use"
+		}
+	],
+	"tools":[
+		{	
+			"index": null,
+			"tool": "Windows",
+			"level": 5
+		},{	
+			"index": null,
+			"tool": "MS Office",
+			"level": 3
+		},{	
+			"index": null,
+			"tool": "Webkit Browsers",
+			"level":4
+		},{	
+			"index": null,
+			"tool": "NotePad++",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Fireox",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Sublimetext",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Git",
+			"level": 2
+		},{	
+			"index": null,
+			"tool": "Adobe Phothosop",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Eclipse",
+			"level": 2
+		},{	
+			"index": null,
+			"tool": "LightRoom",
+			"level": 3
+		},{	
+			"index": null,
+			"tool": "Ubuntu",
+			"level": 3
+		},{	
+			"index": null,
+			"tool": "Filezilla",
+			"level": 2
+		},{	
+			"index": null,
+			"tool": "Adobe Dreamweaver",
+			"level": 3
+		}
+	],
+	"interests":[
+		{
+			"title":"Cycling",
+			"image": "",
+			"description":""
+			
+		},{
+			"title": "Hiking",
+			"image": "",
+			"description":""
+		},{
+			"title":"Timelapse",
+			"image":"",
+			"description":""
+		},{
+			"title":"Old Cars",
+			"image": "",
+			"description":""
+		},{
+			"title": "Music",
+			"image": "",
+			"description":""
+		}
+	],
+	"quotes":{
+		"profile":{
+			"text": "\"Intelligence without ambition is a bird without wings.\"",
+            "author": "Salvador Dali"
+		},
+		"skills":{
+			"text":"\"Insanity: doing the same thing over and over again and expecting different results.\"",
+			"author":"Albert Einstein"
+		},
+		"interests":{
+			"text":"\"A man who limits his interests, limits his life.\"",
+			"author":"Vincent Price"
+		},
+		"contact":{
+			"text":"\"Physical contact is a human necessity.\"",
+			"author":"David Byrne"
+		},
+		"education":{
+			"text":"\"I've never let my school interfere with my education.\"",
+			"author":"Mark Twain"
+		},
+		"careers":{
+			"text":"\"Careers very rarely are a waste of time; jobs usually are.\"",
+			"author":"Donald Glover"
+		},
+		"freetime":{
+			"quote":"\"Is freedom anything else than the right to live as we wish? Nothing else.\"",
+			"text":"Epictetus"
+		},
+		"test":{
+			"text":"",
+			"author":""
+		}
+	}
+}

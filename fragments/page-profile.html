@@ -1,0 +1,123 @@
+<link rel="import" href="../js/libraries/components/polymer/polymer.html">
+<link rel="import" href="../js/libraries/components/paper-shadow/paper-shadow.html">
+
+
+
+
+
+<polymer-element name="page-profile">
+    <template>
+        <link href="../css/font.css"/>
+        <link href="page-profile.css" rel="stylesheet" type="text/css" />
+        <link href="common.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+        <style> 
+            .biography{
+                line-height: 23px;
+            }
+            .bordered {
+                border: 6px dotted #17B1D2;
+            }
+        </style>
+        <div id="profile-page" class="page_item" style="padding-top:50px;">
+            <div class="container" >
+                <div class="row quote">
+                    <div class="col-md-3">
+                        <div class="title">PROFILE</div>
+                    </div>
+                    <div class="col-md-9 element">
+                        <span>{{quote.text}}</span>
+                        <p>{{quote.author}}</p>
+                        <paper-ripple fit></paper-ripple>
+                        <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 element">
+                        <div class="section_title">{{data.biography.title}}</div>
+                        <div class="biography">{{data.biography.text}}</div>
+                        <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>  
+                    </div>
+                    <div class="col-md-4" id="profile_img">
+                        <div class="hs-wrapper">
+                            <img src="../images/profile_img_back.jpg" alt="image01" class="img-circle bordered" id="first_img"/>
+                            <img src="../images/profile_img_1.jpg" alt="image02" class="img-circle bordered"/>
+                            <img src="../images/profile_img_2.jpg" alt="image03" class="img-circle bordered"/>
+                            <img src="../images/profile_img_3.jpg" alt="image04" class="img-circle bordered"/>
+                            <img src="../images/profile_img_front.jpg" alt="image05" class="img-circle bordered"/>
+                            <img src="../images/profile_img_3.jpg" alt="image06" class="img-circle bordered"/>
+                            <img src="../images/profile_img_3.jpg" alt="image07" class="img-circle bordered"/>
+                            <img src="../images/profile_img_1.jpg" alt="image08" class="img-circle bordered"/>
+                            <div class="hs-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 element">
+                        <div class="section_title">{{data.biography.title1}}</div>
+                        <h4>Name:</h4>
+                        <p>{{data.first_name}} {{data.last_name}}</p>
+                        <h4>Age:</h4>
+                        <p>{{data.date_of_birth}}</p>
+                        <h4>Origin Place:</h4>
+                        <p>{{data.place_of_birth}}, {{data.country_of_birth}}</p>
+                        <h4>{{data.current_location.title}}</h4>
+                        <p>{{data.current_location.street}}, {{data.current_location.house_number}}, {{data.current_location.city}} {{data.current_location.zipcode}}</p>
+                        <p>{{data.current_location.country}}, {{data.current_location.planet}}</p>
+                        <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>  
+                    </div>          
+                </div>
+            </div>  
+            <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>  
+        </div>
+    </template>
+
+    <script>
+    Polymer('page-profile', {
+        ready: function() {
+            this.data = data.about; 
+            this.quote = data.quotes.profile;
+        },
+        domReady: function () {
+            var img = this.$.profile_img.getElementsByClassName('hs-wrapper');
+            this.$.profile_img.getElementsByClassName('hs-wrapper')[0].addEventListener("mouseleave", function(e){
+                img[0].children[0].style.zIndex = "9";
+                img[0].children[1].style.zIndex = "8";
+                img[0].children[2].style.zIndex = "7";
+                img[0].children[3].style.zIndex = "6";
+                img[0].children[4].style.zIndex = "5";
+                img[0].children[5].style.zIndex = "4";
+                img[0].children[6].style.zIndex = "3";
+                img[0].children[7].style.zIndex = "2";
+                console.log(img[0].children[0].style.zIndex);
+            });
+        }
+    });
+
+
+    /*function birdayCalc(birthday, toAppend){
+    var milisec =(Date.now() - birthday);
+    var timestampseconds = (Date.now() - birthday);
+    timestampseconds /= 1000; // from ms to secounds
+
+    function component(x, v) {
+    return Math.floor(x / v);
+    }
+
+    var $div = $('div');
+
+    setInterval(function() {
+
+    timestampseconds++;
+
+    var days    = component(timestampseconds, 24 * 60 * 60),
+    hours   = component(timestampseconds,      60 * 60) % 24,
+    minutes = component(timestampseconds,           60) % 60,
+    seconds = component(timestampseconds,            1) % 60;
+
+    $('#'+toAppend).html(days + " days, " + hours + " hours " + minutes + " minutes " + seconds+ " secounds ");
+
+    }, 1000);
+    }*/
+
+    </script>
+</polymer-element>

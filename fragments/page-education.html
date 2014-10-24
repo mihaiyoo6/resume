@@ -1,0 +1,70 @@
+<link rel="import" href="../js/libraries/components/polymer/polymer.html">
+<link rel="import" href="../js/libraries/components/paper-shadow/paper-shadow.html">
+
+<polymer-element name="page-education">
+    <template>
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link href="common.css" rel="stylesheet"/>
+        <style> 
+
+        .bottom{
+            color: #17B1D2;
+            padding: 3px;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        </style>
+        <div id="education-page" class="page_item">
+        <div class="container"> 
+            <div class="row quote">
+                <div class="col-md-4">
+                    <div class="title">EDUCATION</div>
+                </div>
+                <div class="col-md-8 element">
+                    <span>{{quote.text}}</span><p>{{quote.author}}</p>
+                    <paper-ripple fit></paper-ripple>
+                    <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
+                </div>
+            </div>                       
+            <template repeat="{{edu in data}}">
+                <div class="row element">
+                    <div class="col-md-2">
+                        <h4>{{edu.level}}</h4>              
+                        <p>{{edu.period}}</p>
+                    </div>
+                    <div class="col-md-5">
+                        <h4>{{edu.university_name}}</h4>
+                        <h5> {{edu.faculty_name}}</h5>
+                        <p>{{edu.description}}</p>
+                        <div class="bottom">{{edu.specialization}}</div>
+                    </div>
+                    <div class="col-md-5">
+                        <h4>Courses:</h4>
+                        <ul>
+                            <template repeat="{{course in edu.courses}}">
+                                <li><p>{{course}}</p></li>
+                            </template>
+                        </ul>
+                    </div>
+                    <paper-ripple fit></paper-ripple>
+                    <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
+                </div>        
+            </template>          
+        </div> 
+        <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>   
+        </div>
+    </template>
+
+    <script>
+
+    Polymer('page-education', {
+        ready: function() {
+            this.data = data.educations;
+            this.quote = data.quotes.education; 
+        }
+    });
+
+    </script>
+</polymer-element>
