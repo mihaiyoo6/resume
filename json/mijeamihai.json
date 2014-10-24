@@ -23,7 +23,7 @@
 
 			},
 		{
-			"index": 4,
+			"index": 3,
 			"active": true,
 			"page_name":"Education",
 			"data_trigger": "education",
@@ -33,7 +33,7 @@
 			"polymer_element": "page-education"
 			},
 		{
-			"index": 3,
+			"index": 2,
 			"active": true,
 			"page_name": "Careers",
 			"data_trigger": "careers",
@@ -43,7 +43,7 @@
 			"polymer_element": "page-careers"
 			},
 		{
-			"index": 2,
+			"index": 1,
 			"active": true,
 			"page_name":"Abilities",
 			"data_trigger": "skills",
@@ -53,8 +53,8 @@
 			"polymer_element": "page-skills"
 			},
 		{
-			"index": 1,
-			"active": false,
+			"index": 4,
+			"active": true,
 			"page_name":"Interests",
 			"data_trigger": "interests",
 			"icon": "ion-magnet",
@@ -371,25 +371,61 @@
 	"interests":[
 		{
 			"title":"Cycling",
-			"image": "",
-			"description":""
+			"images": ["cycling/1.jpg",
+					  "cycling/2.jpg",
+					  "cycling/3.jpg",
+					  "cycling/4.jpg",
+					  "cycling/5.jpg",
+					  "cycling/6.jpg",
+					  "cycling/7.jpg",
+					  "cycling/8.jpg"
+			],
+			"description":"When I was five years old am learned to ride a bike. At the beginning I ride only in the neighborhood but over time we have expanded the reach to conquer mountains and I see many beautiful areas on two wheels at the present I ride approximately 3000 km per year"
 			
 		},{
 			"title": "Hiking",
-			"image": "",
-			"description":""
+			"images": ["hiking/1.jpg",
+					  "hiking/2.jpg",
+					  "hiking/3.jpg",
+					  "hiking/4.jpg",
+					  "hiking/5.jpg",
+					  "hiking/6.jpg",
+					  "hiking/7.jpg",
+					  "hiking/8.jpg"],
+			"description":"It's an extension of something we all do naturally and every day. I love fresh air, hearing the sounds of birds singing, waterfalls rushing, rivers running, wind blowing in the trees and stuff like that. I also like the way the trees smell. "
 		},{
 			"title":"Timelapse",
-			"image":"",
-			"description":""
+			"images":["timelapse/1.jpg",
+					  "timelapse/2.jpg",
+					  "timelapse/3.jpg",
+					  "timelapse/4.jpg",
+					  "timelapse/5.jpg",
+					  "timelapse/6.jpg",
+					  "timelapse/7.jpg",
+					  "timelapse/8.jpg"],
+			"description":"I love timelapse because it gives you the opportunity to play with time, you can make the time pass more quickly. When I do photos for timelapse spend some time for yourself where you can rinse your mind. I can watch the motion of the world in a way that is otherwise impossible."
 		},{
-			"title":"Old Cars",
-			"image": "",
-			"description":""
+			"title":"Classic Cars",
+			"images": ["cars/1.jpg",
+					  "cars/2.jpg",
+					  "cars/3.jpg",
+					  "cars/4.jpg",
+					  "cars/5.jpg",
+					  "cars/6.jpg",
+					  "cars/7.jpg",
+					  "cars/8.jpg"],
+			"description":"An classic car is like a novel, it has own story. With such a classic machine can keep a living piece of history and enjoy relaxing rides in unique atmosphere. I am convinced that in one day I'll be the proud owner of a classic car. "
 		},{
 			"title": "Music",
-			"image": "",
-			"description":""
+			"images": ["music/1.jpg",
+					  "music/2.jpg",
+					  "music/3.jpg",
+					  "music/4.jpg",
+					  "music/5.jpg",
+					  "music/6.jpg",
+					  "music/7.jpg",
+					  "music/8.jpg"],
+			"description": "Music is everywhere, in your own headphones, in shops, in buses, In the morning after I wake up I turn on the music first and after i start usually stuffs.  Music is proved to raise dopamine levels in our body -that's the small (or big) chill you feel when you listen to your favourite songs."
 		}
 	],
 	"quotes":{
