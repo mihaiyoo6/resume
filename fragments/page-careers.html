@@ -1,7 +1,4 @@
 <link rel="import" href="../js/libraries/components/polymer/polymer.html">
-<link rel="import" href="../js/libraries/components/paper-shadow/paper-shadow.html">
-
-
 
 <polymer-element name="page-careers">
     <template>
@@ -46,14 +43,13 @@
                             <h4>{{career.position}}</h4>
                             <p>{{career.description}}</p>
                             <div class="bottom">
-                                <i class="ion-link"></i><a href="http://{{career.company_website}}" target="_blank">{{career.company_website}}</a> | <i class="ion-android-location"></i> {{career.company_address}}
+                                <i class="ion-link" style="margin-right:5px"></i><a href="http://{{career.company_website}}" target="_blank">{{career.company_website}}</a> | <i class="ion-android-location"></i> {{career.company_address}}
                             </div>
                         </div>
                         <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
                     </div>      
                 </template>
             </div>
-            <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
         </div>
     </template>
 

@@ -49,3 +49,6 @@
           background-color: #eee;
           padding: 20px 0px 20px 0;
         }
+      .bordered {
+        border: 6px dotted #17B1D2;
+        }
