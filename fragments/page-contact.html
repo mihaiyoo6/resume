@@ -15,16 +15,59 @@
             background: #17B1D2;
             color: white;
             float: right;
+            display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        min-width: 5.14em;
+        padding: 0.7em 0.57em;
+        margin: 0 0.29em;        
+        text-align: center;
+        font: inherit;
+        text-transform: uppercase;
+        outline: none;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
         }
         .sendMSG_disable{
             background: #5fcde2;
             color: white;
             float: right;
+            position: relative;
+        box-sizing: border-box;
+        min-width: 5.14em;
+        padding: 0.7em 0.57em;
+        margin: 0 0.29em;        
+        text-align: center;
+        font: inherit;
+        text-transform: uppercase;
+        outline: none;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
         }
         .sendMSG_err {
             background: red;
             color: white;
             float: right;
+            position: relative;
+        box-sizing: border-box;
+        min-width: 5.14em;
+        padding: 0.7em 0.57em;
+        margin: 0 0.29em;        
+        text-align: center;
+        font: inherit;
+        text-transform: uppercase;
+        outline: none;
+        border-radius: 3px;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
         }
         #sendIcon{
             margin-right: 5px;
@@ -65,8 +108,7 @@
         }
         .contact_icon{
             font-size: 30px;
-            text-align: center;  
-            width: 60px;          
+            padding: 20px;
         }
         .custom{
             width: 100%;
@@ -97,19 +139,15 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 element">   
-                    <table>   
-                        <template repeat="{{contact_item in data}}">
-                            <tr class="contact_item">
-                               <td class="contact_icon"> 
-                                    <span class="{{contact_item.icon}} "></span>
-                                </td>
-                                <td>
-                                    <a href="{{contact_item.link_type}}">{{contact_item.text}}</a>
-                                </td>
-                            </tr>
-                        </template>
-                    </table>
+                <div class="col-md-4 element">      
+                    <template repeat="{{contact_item in data}}">
+                        <div class="contact_item">
+                            <span>
+                                <i class="{{contact_item.icon}} contact_icon"></i>
+                            </span>
+                            <a href="{{contact_item.link_type}}">{{contact_item.text}}</a>
+                        </div>
+                    </template>
                     <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow> 
                 </div>          
                 <div class="col-md-4">            
