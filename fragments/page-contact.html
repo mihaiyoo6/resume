@@ -61,7 +61,8 @@
         }
         .contact_icon{
             font-size: 30px;
-            padding: 20px;
+            text-align: center;  
+            width: 60px;
         }
         .custom{
             width: 100%;
@@ -93,14 +94,18 @@
             </div>
             <div class="row">
                 <div class="col-md-4 element">      
-                    <template repeat="{{contact_item in data}}">
-                        <div class="contact_item">
-                            <span>
-                                <i class="{{contact_item.icon}} contact_icon"></i>
-                            </span>
-                            <a href="{{contact_item.link_type}}">{{contact_item.text}}</a>
-                        </div>
-                    </template>
+                    <table>   
+                        <template repeat="{{contact_item in data}}">
+                            <tr class="contact_item">
+                               <td class="contact_icon"> 
+                                    <span class="{{contact_item.icon}} "></span>
+                                </td>
+                                <td>
+                                    <a href="{{contact_item.link_type}}">{{contact_item.text}}</a>
+                                </td>
+                            </tr>
+                        </template>
+                    </table>
                     <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow> 
                 </div>          
                 <div class="col-md-4">            
