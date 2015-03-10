@@ -1,55 +1,267 @@
-<link rel="import" href="../js/libraries/components/polymer/polymer.html">
+link rel="import" href="../js/libraries/components/polymer/polymer.html">
+<link href="../js/libraries/components/core-icons/av-icons.html" rel="import">
+<link href="../js/libraries/components/paper-fab/paper-fab.html" rel="import">
+
+<link href="../js/libraries/components/core-animated-pages/core-animated-pages.html" rel="import">
+<link href="../js/libraries/components/transitions/slide-up.html" rel="import">
+<link href="../js/libraries/components/transitions/list-cascade.html" rel="import">
+<link href="../js/libraries/components/github-button/github-button.html" rel="import">
+<link href="../js/libraries/components/facebook-button/facebook-button.html" rel="import">
+<link href="../js/libraries/components/x-twitter-button/x-twitter-button.html" rel="import">
+<link href="../js/libraries/components/tumblr-button/tumblr-button.html" rel="import">
 
 <polymer-element name="page-projects">
-<link href="common.css" rel="stylesheet"/>
 <template>
-
+    <link href="common.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <style>
 
-      core-animated-pages {
-        display: block;
-        
-        top: 0;
-        left: 0;
-        bottom: 0;
+    .chip-container {
         right: 0;
-      }
-
-      section {
+        left: 0;
         text-align: center;
-        
-      }
+    }
 
-      .square {
-        display: inline-block;
-        margin: 8px;
-        padding: 8px;
-        width: 200px;
+    .chip {
+        display: inline-block;       
+        border-radius: 3px;
+        margin: 6px;        
+        text-align: start;
+        background-color: #fff;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.6);
+    }
+
+    .chip-top {
+        width: 210px;
         height: 200px;
-        background-color: orange;
+    }
+
+    .chip-bottom {
+        padding: 8px;
+        line-height: 1.5;
+    }
+
+    .chip-project-title {
+        font-weight: bold;
+        color: #17B1D2;
+    }
+
+    #details {
+        position: fixed;        
+        z-index: 20;
+    }
+
+    .card {
+        height: 100%;
+        border-radius: 3px;
+        text-align: start;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .card-left {
+        width:70%;
+    }
+
+    .card-right {
+        padding: 50px 24px 24px 24px;
+        min-width: 600px;
+    }
+
+
+    .card-project-title {
+        font-size: 2em;
+        color: #17B1D2;
+    }
+    .chip-short-description{
+
+    }
+    .core-selected{
+        position: relative;
+    }
+    .tehnologies ul li{
+        list-style: none;
+    }
+    .share-btn{
+        
+        margin: 20px;
+    }
+    .bottom{
+        position: absolute;
+        bottom: 0;
+    }
+    .live{
+        height: 20px;
+        width: 60px;
+        background-color: #17B1D1;
         color: #fff;
-      }
+        padding: 3px 5px 3px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    .btn{
+        background-color: #17B1D2;
+        height: 20px;
+        padding: 0px 5px 0px 5px;
+        color: #fff;
+        font-size: 13px;
+        vertical-align: top;
+    }
+    .description-item{
+        margin: 0 0 10px;
+        padding: 10px 20px 10px 0px;
+    }
+    .project-images{
+        text-align: center;
+    }
+    .img-tem{
+        width: 100px;
+        height: 100px;
+        margin: 5px 3px 10px 3px;
+        cursor: pointer;
+    }
+    .close-btn{
+        top: 0;
+        right: 0;
+        position: absolute;
+        margin: 10px;
+        font-size: 40px;
+        font-family: cursive;
+        color: #e1e1e1;
+        cursor: pointer;
+    }
+
     </style>
-    <div class="container">
-    	<div class="row">
-    <core-animated-pages transition="hero-transition">
-  <section layout horizontal>
-    <div id="div1" flex hero-id="shared" hero?="{{selected == 0}}"></div>
-    <div id="div2" flex hero-id="shared" hero?="{{selected == 1}}"></div>
-  </section>
-  <section>
-  <section layout horizontal>
-    <div id="div3" flex hero-id="shared" hero></div>
-  </section>
-  </section>
-</core-animated-pages>
-</div>
-</div>
-  </template>
- <script>
+    <div id="projects-page" class="page_item">
+        <div class="container" >
+            <div class="row quote">
+                <div class="col-md-3">
+                    <div class="title">PROJECTS</div>
+                </div>
+                <div class="col-md-9 element">
+                    <span>{{quote.text}}</span>
+                    <p>{{quote.author}}</p>
+                    <paper-ripple fit></paper-ripple>
+                    <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>  
+                </div>
+            </div>
+            <core-animated-pages selected="{{page}}" transitions="hero-transition" on-core-animated-pages-transition-end="{{complete}}">
+                <section style="position:relative;"> 
+                    <div class="chip-container" hero-p on-tap="{{transition}}">
+                        <template repeat="{{items as item}}">
+                            <div class="chip" hero-id="{{item}}" hero?="{{selectedProject === item }}">
+                                <div class="chip-top" style="background-image:url('{{item.image}}');background-size:cover;" hero-id="{{item.title}}-{{item.descriptpon}}-art" hero?="{{selectedProject === item}}">                                   
+                                    
+                                </div>
+                                <div class="chip-bottom">
+                                    <div class="chip-project-title">{{item.title}}</div>
+                                    <div class="chip-short-description">{{item.short_description}}</div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </section>
+                <section id="details">
+                    <div class="card" layout horizontal hero-id="{{selectedProject}}" hero on-tap="{{transition}}">
+                        <div class="card-left" id="{{selectedProject.id}}" style="background-image:url('{{selectedProject.image}}');background-size:cover;" hero-id="{{selectedProject.title}}-{{selectedProject.description}}-art" hero>
+                        </div>
+                        <div class="card-right" flex>
+                            <div on-tap="{{close}}" class="close-btn">X</div>
+                            <div layout horizontal center>
+                                <div flex>
+                                    <div class="card-project-title">{{selectedProject.title}}</div>
+                                    <div class="card-project-short_description">{{selectedProject.short_description}}</div>
+                                    <div class="descriptions">
+                                        <template repeat="{{selectedProject.descriptions as description}}">
+                                                <p class="description-item">{{description}}</p>
+                                            </template>
+                                    </div>
+                                    <div class="tehnologies">
+                                        <ul>
+                                            <template repeat="{{selectedProject.tehnologies as tehnology}}">
+                                                <li class="tehnology_item">{{tehnology}}</li>
+                                            </template>
+                                        </ul>
+                                    </div> 
+                                    <div class="bottom">  
+                                        <div class="project-images">
+                                            <template repeat="{{selectedProject.images as image}}">
+                                                <img class="img-tem paper-shadow-bottom-z-5" src="{{image}}" on-tap="{{changeImage}}" data="{{selectedProject.id}}"></img>
+                                                
+                                            </template>
+                                        </div>                                
+                                        <div class="share-btn">
+                                            <template if="{{ selectedProject.facebook }}">
+                                                <facebook-button href="http://www.mijemaihai.com"> </facebook-button>
+                                            </template>
+                                            <!--twitter-button href="http://www.mijemaihai.com" user="mihaiyoo6"> </twitter-button-->
+                                            <template if="{{ selectedProject.twitter }}">
+                                                <x-twitter-button href="selectedProject.twitter_url" tweetText="selectedProject.twitter_text"></x-twitter-button>
+                                            </template>
+                                            <template if="{{ selectedProject.tumblr }}">
+                                                <tumblr-button url="selectedProject.tumblr_url" title="selectedProject.tumblr_text"> </tumblr-button>
+                                            </template>
+                                            <template if="{{ selectedProject.git }}">
+                                                <github-button user="mihaiyoo6" repo="{{selectedProject.repo}}" ></github-button>
+                                            </template>
+                                            <template if="{{ selectedProject.link }}">
+                                                
+                                                <a href="{{selectedProject.link_url }}" class="btn">Demo</a>
+                                                  
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </core-animated-pages>  
+        </div>
+        <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow>
+    </div> 
+</template>
+<script>
 
-    Polymer('page-projects', {
+Polymer('page-projects', {
+    ready: function() {
+        this.projects = data.projects;
+        this.quote = data.quotes.projects;
+    },
+    page: 0,
+    items:  data.projects
+        /*{ artist: 'Tycho', album: 'Fragments', color: 'images/jumbotron/hamac.gif' },
+        { artist: 'Tycho', album: 'Past Prologue', color: 'images/3.jpg' },
+        { artist: 'Tycho', album: 'Spectre', color: 'images/1.jpg' },
+        { artist: 'Tycho', album: 'Awake', color: 'images/5.jpg' },
+        { artist: 'Tycho', album: 'Fragments', color: 'images/6.jpg' },
+        { artist: 'Tycho', album: 'Past Prologue', color: 'images/1.jpg' },
+        { artist: 'Tycho', album: 'Spectre', color: 'images/1.jpg' },
+        { artist: 'Tycho', album: 'Awake', color: 'images/1.jpg' }*/
+    ,
+    selectedAlbum: null,
+    transition: function(e) {
+        if (this.page === 0 && e.target.templateInstance.model.item) {
+            this.selectedProject = e.target.templateInstance.model.item;
+            this.page = 1;
+        } else {
+            //this.page = 0;
+        }
+    },
+    close:function(e){
+        this.page = 0;
+    },
+    changeImage: function(e){
+        //console.log(e.srcElement.src);
+        console.log(this.selectedProject);
+        //console.log(e.targetElement.$.ussd);
+        var image = this.shadowRoot.getElementById(this.selectedProject.id);
+        image.style.backgroundImage = 'url('+ e.srcElement.src + ')';
+        console.log(this.shadowRoot.getElementById(this.selectedProject.id));
+        console.log(e.target.templateInstance.model.item);
 
-    });
+    }
+});
 </script>
 </polymer-element>
