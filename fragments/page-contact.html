@@ -26,13 +26,9 @@
             margin-right: 5px;
         }
         #qr_code{
-            height: 100%;
-            width: 100%;
-            border: 1px solid black;        
-            cursor: none;
-            transition:all 1s;
-            -webkit-transition:all 1s;
-            -moz-transition:all 1s;
+            height: 400px;
+            margin: auto;
+            padding-top: 30px;
         }
         #qr_code:hover{
             border-radius: 0px;
@@ -93,7 +89,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 element">      
+                <div class="col-md-6 element">      
                     <table>   
                         <template repeat="{{contact_item in data}}">
                             <tr class="contact_item">
@@ -101,17 +97,17 @@
                                     <span class="{{contact_item.icon}} "></span>
                                 </td>
                                 <td>
-                                    <a href="{{contact_item.link_type}}">{{contact_item.text}}</a>
+                                    <a href="{{contact_item.link_type}}" target="blank">{{contact_item.text}}</a>
                                 </td>
                             </tr>
                         </template>
                     </table>
                     <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow> 
                 </div>          
-                <div class="col-md-4">            
-                    <img id="qr_code"  class="img-circle img-responsive" src="../images/qr.png">
+                <div class="col-md-6">            
+                    <img id="qr_code"  class="img-responsive" src="../images/qr.png">
                 </div> 
-                <div class="col-md-4 element" id="contactForm">
+                <!-- <div class="col-md-4 element" id="contactForm">
                     <div class="section_title">Contact me!</div>
                     <form>
                         <paper-input class="custom" floatingLabel label="Type your name here " equired error="This input requires a value!" id="senderName" required></paper-input>
@@ -120,7 +116,7 @@
                         <paper-button  id="sendMSG" class="sendMSG_enable" role="button" tabindex="0" style="overflow: visible;" on-tap="{{sendEmail}}" ><i id="sendIcon" class="ion-paper-airplane"></i>Send</paper-button>
                     </form>
                     <paper-shadow animated='true' class="paper-shadow-bottom-z-5" z="1"></paper-shadow> 
-                </div>         
+                </div>  -->        
             </div>
         </div>
     </div>
@@ -149,7 +145,7 @@
                                         
                             $.ajax({
                               type: "POST",
-                              url: "http://mijeamihai.com/emailForm/sendEmail.php",
+                              url: "emailForm/sendEmail.php",
                               data: emailData,
                               success: function(response){
                                 if(response.success){
