@@ -131,6 +131,9 @@
 		"icon": "ion-social-skype-outline",
 		"title":"Skype",
 		"link_type": "skype:mihaiyoo6?call"
+		"icon": "ion-link",
+		"title": "Personal website",
+		"link_type": "http://mijeamihai.com"	
 	},{
 		"text":"mijeamihai.com",
 		"icon": "ion-link",
@@ -143,12 +146,19 @@
 		"link_type": "https://goo.gl/Q9wjkM"
 			
 	},{
+		"text": "instagram.com/mihaiyoo6",
+		"icon":"ion-social-instagram-outline",
+		"title": "Instagram",
+		"link_type": "https://www.instagram.com/mihaiyoo6"
+			
+	},,{
 		"text": "facebook.com/mihaiyoo6",
 		"icon":"ion-social-facebook-outline",
 		"title": "Facebook",
 		"link_type": "https://goo.gl/aKUCNR"
 			
-	},{
+	},
+			   {
 		"text":"youtube.com/user/mihaiyoo6",
 		"icon": "ion-social-youtube-outline",
 		"title": "Youtube",
