@@ -225,15 +225,24 @@
 	"careers":[
 		{
 			"index": 1,
+			"company": "Fontem Ventures",
+			"company_address":"Radarweg 60 - 1043 NT Amsterdam The Netherlands",
+			"company_website": "www.fontemventures.com",
+			"position": "Software Engineer - FullStack Javascript",
+			"period": "09.2018 – present",
+			"description": "Developing new e-commerce multi language e-commerce webshop for the product BLU (www.blu.com/en/US)"
+		},
+		{
+			"index": 2,
 			"company": "Suitsupply",
 			"company_address":"JH.J.E. Wenckebachweg 210 - 1096 AS Amsterdam",
 			"company_website": "www.suitsupply.com",
 			"position": "Software Engineer - FullStack Javascript",
-			"period": "08.2017 – present",
+			"period": "08.2017 – 09.2018",
 			"description": "Developing responsive single page NodeJs application \"Custom Made\", leading front-end direction for application. Creating modular application that can be extended to all type of product. aggregating data from multiple sources(micro-services and 3rd party API's). Building image delivery system for product to reflect user selection (integration with Cloudinary). Application is used by sales representatives in Suitsupply store and also by customers on website"
 		},
 		{
-			"index": 2,
+			"index": 3,
 			"company": "Suitsupply",
 			"company_address":"JH.J.E. Wenckebachweg 210 - 1096 AS Amsterdam",
 			"company_website": "www.suitsupply.com",
@@ -241,7 +250,7 @@
 			"period": "01.2015 – 08.2017",
 			"description": "Develop new user-facing features Build reusable code and libraries for future use and create mock API (mock data) Ensure the technical feasibility and responsibility  of UI/UX designs Optimize application for maximum speed and scalability Ensure that all user input is validated before submitting to back-end Collaborate with other team members and stakeholders"
 		},{
-			"index": 3,
+			"index": 4,
 			"company": "UnitApp is a brand of Digimarketing Systems Ltd.",
 			"company_address":"Falckstraat 15-29 1017 VV Amsterdam",
 			"company_website": "www.unitapp.com",
@@ -249,7 +258,7 @@
 			"period": "08.2014 – 12.2014",
 			"description": "After my moving to Amsterdam. I start working as an intern for UnitApp, here I make part of a young team that build an interesting concept. My job was to implement new features according to specifications on the application modular CMS and also find and fix bugs in existing units and not in last place optimizing the code. Here I improve my knowledge about HTML5/CSS3 ,JQuery and Bootstrap."
 		},{			
-			"index": 4,
+			"index": 5,
 			"company":"ATRAXO Consulting & Development SCS",
 			"company_address":"Moldovei nr.10A Brasov Romania",
 			"company_website":"www.atraxo.com",
@@ -257,7 +266,7 @@
 			"period":"11.2013 – 06.2014",
 			"description":"This job means for me a new steep in my developer career. Here I take contact with MCV patterns and SVN practice. After an training my responsibility was to create a prototype application using Sencha Touch framework (javascript mobile base framework). After that I start learning / using  Extjs 4 javascript framework with scope to update actual web interface of company application. Here also I get in touch with back end JAVA programing and ORACLE databases."
 		},{
-			"index": 5,
+			"index": 6,
 			"company":"S.C ZECE PLUS S.R.L",
 			"company_address":"Mihail Kogălniceanu 23, Brașov-Romania",
 			"company_website":"www.zcplus.ro",
@@ -265,7 +274,7 @@
 			"period":"04.2013 – 11.2013",
 			"description":"By this job I officially start my developer career. Here I was part of a team and the  first project started from scratch was a virtual fitting room, for this project I use start to learn PHP and I take contact with javascript frameworks like JQuery. Next project in witch I participated was a E-learning platform, my jobs was to make the main interface for that platform (menus for courses/lessons, also the tax methods, implementing a credit point system ). During this project, I gain new knowledge of the web technologies such as HTML and the CSS Javascript and PHP."
 		},{
-			"index": 6,
+			"index": 7,
 			"company":"DCI for Commerce and Industry Romania SRL",
 			"company_address":"Transilvaniei Nr. 28 Brasov Romaina",
 			"company_website":"www.dci.de",
