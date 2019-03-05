@@ -1,74 +1,74 @@
-{
-	"success": true,
-
-	"pages": [{
+{	"success": true,
+	
+	"pages":[
+		{
 			"index": 0,
 			"active": true,
-			"page_name": "Profile",
+			"page_name":"Profile",
 			"data_trigger": "profile",
 			"icon": "ion-person-stalker",
-			"background_image": "",
+			"background_image":"",
 			"page_height": 0,
 			"polymer_element": "page-profile"
-		},
+			},
 		{
 			"index": 5,
 			"active": true,
-			"page_name": "Contact",
+			"page_name":"Contact",
 			"data_trigger": "contact",
 			"icon": "ion-card",
-			"background_image": "contact.jpg",
+			"background_image":"contact.jpg",
 			"page_height": 400,
 			"polymer_element": "page-contact"
 
-		},
+			},
 		{
 			"index": 3,
 			"active": true,
-			"page_name": "Education",
+			"page_name":"Education",
 			"data_trigger": "education",
 			"icon": "ion-university",
-			"background_image": "education1.jpg",
+			"background_image":"education1.jpg",
 			"page_height": 400,
 			"polymer_element": "page-education"
-		},
+			},
 		{
 			"index": 2,
 			"active": true,
 			"page_name": "Careers",
 			"data_trigger": "careers",
 			"icon": "ion-clipboard",
-			"background_image": "office.jpg",
+			"background_image":"office.jpg",
 			"page_height": 350,
 			"polymer_element": "page-careers"
-		},
+			},
 		{
 			"index": 1,
 			"active": true,
-			"page_name": "Abilities",
+			"page_name":"Abilities",
 			"data_trigger": "skills",
 			"icon": "ion-gear-b",
-			"background_image": "abilities.jpg",
+			"background_image":"abilities.jpg",
 			"page_height": 400,
 			"polymer_element": "page-skills"
-		},
+			},
 		{
 			"index": 4,
 			"active": true,
-			"page_name": "Interests",
+			"page_name":"Interests",
 			"data_trigger": "interests",
 			"icon": "ion-magnet",
-			"background_image": "interests.jpg",
+			"background_image":"interests.jpg",
 			"page_height": 500,
 			"polymer_element": "page-interests"
-		},
+			},
 		{
 			"index": 6,
 			"active": false,
-			"page_name": "Free time",
+			"page_name":"Free time",
 			"data_trigger": "freetime",
 			"icon": "ion-beer",
-			"background_image": "6.jpg",
+			"background_image":"6.jpg",
 			"page_height": 300,
 			"polymer_element": "page-freetime"
 		},
@@ -78,125 +78,125 @@
 			"page_name": "Projects",
 			"data_trigger": "projects",
 			"icon": "ion-clipboard",
-			"background_image": "3.jpg",
+			"background_image":"3.jpg",
 			"page_height": 300,
 			"polymer_element": "page-projects"
-		},
+			},
 		{
 			"index": 8,
 			"active": false,
 			"page_name": "Test",
 			"data_trigger": "test",
 			"icon": "ion-clipboard",
-			"background_image": "3.jpg",
+			"background_image":"3.jpg",
 			"page_height": 300,
 			"polymer_element": "page-test"
-		}
+			}
 	],
-	"about": {
+	"about":{
 		"first_name": "Mihai",
 		"middle_name": "V.V.",
 		"last_name": "Mijea",
-		"date_of_birth": "30 years",
+		"date_of_birth": "29 years",
 		"place_of_birth": "Fagaras",
 		"country_of_birth": "Romania",
 		"biography": {
-			"title": "About me",
+			"title":"About me",
 			"title1": "Details",
-			"text": "I am software developer aka problem solver. I like to know latest news of technology to create useful software with the latest tools. I like to have everything in order and have well-defined goals to know how to plan my next steps.I love working in a team because you learn things from each member of the team, in a team should be many ideas, and things were going faster, but there are times when I prefer to work alone to put my own ideas into practice. When it comes to who is right if my opinion is the correct one support all the way in other case I can admit that I was wrong."
-		},
+			"text":"I am software developer aka problem solver. I like to know latest news of technology to create useful software with the latest tools. I like to have everything in order and have well-defined goals to know how to plan my next steps.I love working in a team because you learn things from each member of the team, in a team should be many ideas, and things were going faster, but there are times when I prefer to work alone to put my own ideas into practice. When it comes to who is right if my opinion is the correct one support all the way in other case I can admit that I was wrong."},
 		"current_location": {
 			"title": "Current location",
 			"street": "",
-			"house_number": ,
+			"house_number": "",
 			"zipcode": "",
 			"city": "Amsterdam",
 			"country": "The Netherlands",
 			"planet": "Earth"
 		},
-		"profile_img": "",
-		"quote": {
+		"profile_img":"",
+		"quote":{
 			"text": "\"Intelligence without ambition is a bird without wings.\"",
-			"author": "Salvador Dali"
+            "author": "Salvador Dali"
 		}
 	},
-	"contact_details": [{
+	"contact_details":[{
 
-			"text": "mijeamihai@yahoo.com",
-			"icon": "ion-at",
-			"title": "Email",
-			"link_type": "mailto:mijeamihai@yahoo.com?Subject=[CV_Page]"
-		},
+		"text":"mijeamihai@yahoo.com",
+		"icon": "ion-at",
+		"title": "Email",
+		"link_type": "mailto:mijeamihai@yahoo.com?Subject=[CV_Page]"
+	},
+	{
+		"text":"mihaiyoo6",
+		"icon": "ion-social-skype-outline",
+		"title":"Skype",
+		"link_type": "skype:mihaiyoo6?call"
+	},{
+		"text":"mijeamihai.com",
+		"icon": "ion-link",
+		"title": "Personal website",
+		"link_type": "http://mijeamihai.com"	
+	},{
+		"text":"linkedin.com/in/mijeamihai",
+		"icon":"ion-social-linkedin-outline",
+		"title": "Linkedin",
+		"link_type": "https://goo.gl/Q9wjkM"
+			
+	},{
+		"text": "instagram.com/mihaiyoo6",
+		"icon":"ion-social-instagram-outline",
+		"title": "Instagram",
+		"link_type": "https://www.instagram.com/mihaiyoo6/"
+			
+	},{
+		"text": "facebook.com/mihaiyoo6",
+		"icon":"ion-social-facebook-outline",
+		"title": "Facebook",
+		"link_type": "https://goo.gl/aKUCNR"
+			
+	},{
+		"text":"youtube.com/user/mihaiyoo6",
+		"icon": "ion-social-youtube-outline",
+		"title": "Youtube",
+		"link_type": "https://goo.gl/R6zXtG"
+	},{
+		"text":"Curriculum vitae",
+		"icon": "ion-ios7-paper",
+		"title": "Curriculum vitae",
+		"link_type": "https://goo.gl/M3PKig"
+	},{
+		"text":"Good Reads",
+		"icon": "ion-android-book",
+		"title": "Good Reads",
+		"link_type": "https://goo.gl/PKynmk"
+	},{
+		"text":"Pluralsight",
+		"icon": "ion-ios7-play-outline",
+		"title": "Pluralsight",
+		"link_type": "https://goo.gl/BDy27x"
+	},{
+		"text":"Endomondo",
+		"icon": "ion-trophy",
+		"title": "Endomondo",
+		"link_type": "https://goo.gl/j5bB7J"
+	}],
+	"educations":[
 		{
-			"text": "mihaiyoo6",
-			"icon": "ion-social-skype-outline",
-			"title": "Skype",
-			"link_type": "skype:mihaiyoo6?call"
-		}, {
-			"text": "mijeamihai.com",
-			"icon": "ion-link",
-			"title": "Personal website",
-			"link_type": "http://mijeamihai.com"
-		}, {
-			"text": "linkedin.com/in/mijeamihai",
-			"icon": "ion-social-linkedin-outline",
-			"title": "Linkedin",
-			"link_type": "https://goo.gl/Q9wjkM"
-
-		}, {
-			"text": "instagram.com/mihaiyoo6",
-			"icon": "ion-social-instagram-outline",
-			"title": "Instagram",
-			"link_type": "https://www.instagram.com/mihaiyoo6"
-
-		}, {
-			"text": "facebook.com/mihaiyoo6",
-			"icon": "ion-social-facebook-outline",
-			"title": "Facebook",
-			"link_type": "https://goo.gl/aKUCNR"
-		}, {
-			"text": "youtube.com/user/mihaiyoo6",
-			"icon": "ion-social-youtube-outline",
-			"title": "Youtube",
-			"link_type": "https://goo.gl/R6zXtG"
-		}, {
-			"text": "Curriculum vitae",
-			"icon": "ion-ios7-paper",
-			"title": "Curriculum vitae",
-			"link_type": "https://goo.gl/M3PKig"
-		}, {
-			"text": "Good Reads",
-			"icon": "ion-android-book",
-			"title": "Good Reads",
-			"link_type": "https://goo.gl/PKynmk"
-		}, {
-			"text": "Pluralsight",
-			"icon": "ion-ios7-play-outline",
-			"title": "Pluralsight",
-			"link_type": "https://goo.gl/BDy27x"
-		}, {
-			"text": "Endomondo",
-			"icon": "ion-trophy",
-			"title": "Endomondo",
-			"link_type": "https://goo.gl/j5bB7J"
-		}
-	],
-	"educations": [{
 			"university_name": "Transylvania University of Brasov",
 			"faculty_name": "Multi-regional program of  master study in e-Activities domain",
 			"specialization": "Specialization: E-health",
 			"period": "10.2012 – 06.2014",
 			"level": "Master degree",
 			"courses": ["Internet technologies",
-				"Platforms for e-activities",
-				"Web 2.0 / 3.0 technologies",
-				"Project management",
-				"System security for e-Activities",
-				"Standards for E-health information systems",
-				"Communications protocols"
-			],
-			"description": "e-START project overall objective is to create new learning opportunities and professional training at Masters level in the e-activities field in accordance with the needs of the digital economy. Achieved a multi-regional partnership between four universities in Romania.Specializations offered by this master program, held in low frequency regime, are considering developing a set of skills technological, economic and management."
-		},
+						"Platforms for e-activities",
+						"Web 2.0 / 3.0 technologies",
+						"Project management",
+						"System security for e-Activities",
+						"Standards for E-health information systems",
+						"Communications protocols"
+						],
+			"description":"e-START project overall objective is to create new learning opportunities and professional training at Masters level in the e-activities field in accordance with the needs of the digital economy. Achieved a multi-regional partnership between four universities in Romania.Specializations offered by this master program, held in low frequency regime, are considering developing a set of skills technological, economic and management."
+		},		
 		{
 			"university_name": "Transylvania University of Brasov",
 			"faculty_name": "Faculty of Electrical Engineering and Computer Science",
@@ -204,12 +204,12 @@
 			"period": "10.2012 – 06.2014",
 			"level": "Master degree",
 			"courses": ["Mobile communications and mobile computing, ( LTE. WIMAX)",
-				"Distributed databases for telecommunications",
-				"Smart Grid Communications",
-				"Packet switching, circuits and public service",
-				"Quality of service and security of computer networks"
-			],
-			"description": "After the first four years I have been in contact with the foundation of telecommunications is the time to learn things more specific and topical. During these two years of study I learned about the latest in telecommunications standards such as LTE (4G), smart grid, distributed databases and more."
+						"Distributed databases for telecommunications",
+						"Smart Grid Communications",
+						"Packet switching, circuits and public service",
+						"Quality of service and security of computer networks"
+						],
+			"description":"After the first four years I have been in contact with the foundation of telecommunications is the time to learn things more specific and topical. During these two years of study I learned about the latest in telecommunications standards such as LTE (4G), smart grid, distributed databases and more."
 		},
 		{
 			"university_name": "Transylvania University of Brasov",
@@ -218,20 +218,21 @@
 			"period": "10.2008 – 06.2012",
 			"level": "Bachelor's degree",
 			"courses": ["Cellular mobile communications, ( GSM GPRS 3G )",
-				"Radio-location and radio navigation",
-				"Computer Networks",
-				"Packet switching, circuits and public service",
-				"Operating Systems ",
-				"Analogue Electronics",
-				"Digital Electronics"
-			],
-			"description": "This study cycle was divided into two parts. First two years I studied mathematics, physics, electronics and electrical basics. The next two years I started to learn things specific to telecommunications, such sons GSM(3G) network architecture, computer networks, digital electronics and more. Of course I got in touch and learning in telecommunications software development bases in JAVA programming"
+						"Radio-location and radio navigation",
+						"Computer Networks",
+						"Packet switching, circuits and public service",
+						"Operating Systems ",
+						"Analogue Electronics",
+						"Digital Electronics"
+						],
+			"description":"This study cycle was divided into two parts. First two years I studied mathematics, physics, electronics and electrical basics. The next two years I started to learn things specific to telecommunications, such sons GSM(3G) network architecture, computer networks, digital electronics and more. Of course I got in touch and learning in telecommunications software development bases in JAVA programming"
 		}
 	],
-	"careers": [{
+	"careers":[
+		{
 			"index": 1,
 			"company": "Fontem Ventures",
-			"company_address": "Radarweg 60 - 1043 NT Amsterdam The Netherlands",
+			"company_address":"Radarweg 60 - 1043 NT Amsterdam The Netherlands",
 			"company_website": "www.fontemventures.com",
 			"position": "Software Engineer - FullStack Javascript",
 			"period": "09.2018 – present",
@@ -240,7 +241,7 @@
 		{
 			"index": 2,
 			"company": "Suitsupply",
-			"company_address": "JH.J.E. Wenckebachweg 210 - 1096 AS Amsterdam",
+			"company_address":"JH.J.E. Wenckebachweg 210 - 1096 AS Amsterdam",
 			"company_website": "www.suitsupply.com",
 			"position": "Software Engineer - FullStack Javascript",
 			"period": "08.2017 – 09.2018",
@@ -249,290 +250,293 @@
 		{
 			"index": 3,
 			"company": "Suitsupply",
-			"company_address": "JH.J.E. Wenckebachweg 210 - 1096 AS Amsterdam",
+			"company_address":"JH.J.E. Wenckebachweg 210 - 1096 AS Amsterdam",
 			"company_website": "www.suitsupply.com",
 			"position": "Front-End Developer",
 			"period": "01.2015 – 08.2017",
 			"description": "Develop new user-facing features Build reusable code and libraries for future use and create mock API (mock data) Ensure the technical feasibility and responsibility  of UI/UX designs Optimize application for maximum speed and scalability Ensure that all user input is validated before submitting to back-end Collaborate with other team members and stakeholders"
-		}, {
+		},{
 			"index": 4,
 			"company": "UnitApp is a brand of Digimarketing Systems Ltd.",
-			"company_address": "Falckstraat 15-29 1017 VV Amsterdam",
+			"company_address":"Falckstraat 15-29 1017 VV Amsterdam",
 			"company_website": "www.unitapp.com",
 			"position": "Internship Front-End Developer",
 			"period": "08.2014 – 12.2014",
 			"description": "After my moving to Amsterdam. I start working as an intern for UnitApp, here I make part of a young team that build an interesting concept. My job was to implement new features according to specifications on the application modular CMS and also find and fix bugs in existing units and not in last place optimizing the code. Here I improve my knowledge about HTML5/CSS3 ,JQuery and Bootstrap."
-		}, {
+		},{			
 			"index": 5,
-			"company": "ATRAXO Consulting & Development SCS",
-			"company_address": "Moldovei nr.10A Brasov Romania",
-			"company_website": "www.atraxo.com",
-			"position": "Junior Software Developer",
-			"period": "11.2013 – 06.2014",
-			"description": "This job means for me a new steep in my developer career. Here I take contact with MCV patterns and SVN practice. After an training my responsibility was to create a prototype application using Sencha Touch framework (javascript mobile base framework). After that I start learning / using  Extjs 4 javascript framework with scope to update actual web interface of company application. Here also I get in touch with back end JAVA programing and ORACLE databases."
-		}, {
+			"company":"ATRAXO Consulting & Development SCS",
+			"company_address":"Moldovei nr.10A Brasov Romania",
+			"company_website":"www.atraxo.com",
+			"position":"Junior Software Developer",
+			"period":"11.2013 – 06.2014",
+			"description":"This job means for me a new steep in my developer career. Here I take contact with MCV patterns and SVN practice. After an training my responsibility was to create a prototype application using Sencha Touch framework (javascript mobile base framework). After that I start learning / using  Extjs 4 javascript framework with scope to update actual web interface of company application. Here also I get in touch with back end JAVA programing and ORACLE databases."
+		},{
 			"index": 6,
-			"company": "S.C ZECE PLUS S.R.L",
-			"company_address": "Mihail Kogălniceanu 23, Brașov-Romania",
-			"company_website": "www.zcplus.ro",
-			"position": "Junior Software Developer",
-			"period": "04.2013 – 11.2013",
-			"description": "By this job I officially start my developer career. Here I was part of a team and the  first project started from scratch was a virtual fitting room, for this project I use start to learn PHP and I take contact with javascript frameworks like JQuery. Next project in witch I participated was a E-learning platform, my jobs was to make the main interface for that platform (menus for courses/lessons, also the tax methods, implementing a credit point system ). During this project, I gain new knowledge of the web technologies such as HTML and the CSS Javascript and PHP."
-		}, {
+			"company":"S.C ZECE PLUS S.R.L",
+			"company_address":"Mihail Kogălniceanu 23, Brașov-Romania",
+			"company_website":"www.zcplus.ro",
+			"position":"Junior Software Developer",
+			"period":"04.2013 – 11.2013",
+			"description":"By this job I officially start my developer career. Here I was part of a team and the  first project started from scratch was a virtual fitting room, for this project I use start to learn PHP and I take contact with javascript frameworks like JQuery. Next project in witch I participated was a E-learning platform, my jobs was to make the main interface for that platform (menus for courses/lessons, also the tax methods, implementing a credit point system ). During this project, I gain new knowledge of the web technologies such as HTML and the CSS Javascript and PHP."
+		},{
 			"index": 7,
-			"company": "DCI for Commerce and Industry Romania SRL",
-			"company_address": "Transilvaniei Nr. 28 Brasov Romaina",
-			"company_website": "www.dci.de",
-			"position": "Data operator (insertion, validation and processing)",
-			"period": "11.2012 – 06.2013",
-			"description": " Operate, validate and processing data. Quality control of data. Search and generate content for demo pages (Programs / Graphics / HTML Pages / Newsletters). Tools used: Internal interface for data input, HTML editor, Advance search engine techniques, Salesforce platform"
+			"company":"DCI for Commerce and Industry Romania SRL",
+			"company_address":"Transilvaniei Nr. 28 Brasov Romaina",
+			"company_website":"www.dci.de",
+			"position":"Data operator (insertion, validation and processing)",
+			"period":"11.2012 – 06.2013",
+			"description":" Operate, validate and processing data. Quality control of data. Search and generate content for demo pages (Programs / Graphics / HTML Pages / Newsletters). Tools used: Internal interface for data input, HTML editor, Advance search engine techniques, Salesforce platform"
 		}
 	],
-	"skills": [{
-		"index": 3,
-		"skill": "HTML",
-		"level": 4
-	}, {
-		"index": 5,
-		"skill": "Sass/CSS",
-		"level": 4
-	}, {
-		"index": 0,
-		"skill": "Javascript",
-		"level": 4
-	}, {
-		"index": 1,
-		"skill": "Webpack MODULE BUNDLER",
-		"level": 2
-	}, {
-		"index": 4,
-		"skill": "MySQL",
-		"level": 2
-	}, {
-		"index": 11,
-		"skill": "JSON",
-		"level": 4
-	}, {
-		"index": 7,
-		"skill": "Jquery",
-		"level": 4
-	}, {
-		"index": 7,
-		"skill": "React JS",
-		"level": 2
-	}, {
-		"index": 9,
-		"skill": "Bootstrap",
-		"level": 4
-	}, {
-		"index": 8,
-		"skill": "MVC Pattern",
-		"level": 2
-	}, {
-		"index": 6,
-		"skill": "Extjs",
-		"level": 2
-	}, {
-		"index": 12,
-		"skill": "Sencha Touch",
-		"level": 2
-	}, {
-		"index": 13,
-		"skill": "Polymer by Google",
-		"level": 2
-	}, {
-		"index": 10,
-		"skill": "Grunt.JS",
-		"level": 2
-	}, {
-		"index": 14,
-		"skill": "Velocity.JS - animations JS framework",
-		"level": 3
-	}, {
-		"index": 15,
-		"skill": "Handlebars.JS/Nunjucks - template language",
-		"level": 3
-	}, {
-		"index": 16,
-		"skill": "MeteorJS",
-		"level": 3
-	}, {
-		"index": 17,
-		"skill": "MongoDB",
-		"level": 2
-	}],
-	"languages": [{
-		"language": "Romanian",
-		"level": 5,
-		"usage": "Native speaker "
-	}, {
-		"language": "English",
-		"level": 4,
-		"usage": "professional proficiency "
-	}, {
-		"language": "Dutch",
-		"level": 1,
-		"usage": "learning in progress "
-	}],
-	"tools": [{
-		"index": null,
-		"tool": "Windows",
-		"level": 5
-	}, {
-		"index": null,
-		"tool": "MacOS",
-		"level": 5
-	}, {
-		"index": null,
-		"tool": "MS Office",
-		"level": 3
-	}, {
-		"index": null,
-		"tool": "G-suite",
-		"level": 3
-	}, {
-		"index": null,
-		"tool": "Web-kit Browsers",
-		"level": 4
-	}, {
-		"index": null,
-		"tool": "NotePad++",
-		"level": 4
-	}, {
-		"index": null,
-		"tool": "Firefox",
-		"level": 4
-	}, {
-		"index": null,
-		"tool": "Sublimetext",
-		"level": 4
-	}, {
-		"index": null,
-		"tool": "Git",
-		"level": 5
-	}, {
-		"index": null,
-		"tool": "Adobe Photoshop",
-		"level": 4
-	}, {
-		"index": null,
-		"tool": "Eclipse",
-		"level": 2
-	}, {
-		"index": null,
-		"tool": "LightRoom",
-		"level": 3
-	}, {
-		"index": null,
-		"tool": "Ubuntu",
-		"level": 3
-	}, {
-		"index": null,
-		"tool": "Filezilla",
-		"level": 2
-	}, {
-		"index": null,
-		"tool": "WebStrorm",
-		"level": 3
-	}, {
-		"index": null,
-		"tool": "Visual Code",
-		"level": 3
-	}],
-	"interests": [{
-		"title": "Cycling",
-		"images": ["cycling/1.jpg",
-			"cycling/2.jpg",
-			"cycling/3.jpg",
-			"cycling/4.jpg",
-			"cycling/5.jpg",
-			"cycling/6.jpg",
-			"cycling/7.jpg",
-			"cycling/8.jpg"
-		],
-		"description": "When I was five years old am learned to ride a bike. At the beginning I ride only in the neighborhood but over time we have expanded the reach to conquer mountains and I see many beautiful areas on two wheels at the present I ride approximately 3000 km per year"
-
-	}, {
-		"title": "Hiking",
-		"images": ["hiking/1.jpg",
-			"hiking/2.jpg",
-			"hiking/3.jpg",
-			"hiking/4.jpg",
-			"hiking/5.jpg",
-			"hiking/6.jpg",
-			"hiking/7.jpg",
-			"hiking/8.jpg"
-		],
-		"description": "It's an extension of something we all do naturally and every day. I love fresh air, hearing the sounds of birds singing, waterfalls rushing, rivers running, wind blowing in the trees and stuff like that. I also like the way the trees smell. "
-	}, {
-		"title": "Timelapse",
-		"images": ["timelapse/1.jpg",
-			"timelapse/2.jpg",
-			"timelapse/3.jpg",
-			"timelapse/4.jpg",
-			"timelapse/5.jpg",
-			"timelapse/6.jpg",
-			"timelapse/7.jpg",
-			"timelapse/8.jpg"
-		],
-		"description": "I love time-lapse because it gives you the opportunity to play with time, you can make the time pass more quickly. When I do photos for time-lapse spend some time for yourself where you can rinse your mind. I can watch the motion of the world in a way that is otherwise impossible.PS: check my Youtube channel"
-	}, {
-		"title": "Classic Cars",
-		"images": ["cars/1.jpg",
-			"cars/2.jpg",
-			"cars/3.jpg",
-			"cars/4.jpg",
-			"cars/5.jpg",
-			"cars/6.jpg",
-			"cars/7.jpg",
-			"cars/8.jpg"
-		],
-		"description": "An classic car is like a novel, it has own story. With such a classic machine can keep a living piece of history and enjoy relaxing rides in unique atmosphere. I am convinced that in one day I'll be the proud owner of a classic car. "
-	}, {
-		"title": "Music",
-		"images": ["music/1.jpg",
-			"music/2.jpg",
-			"music/3.jpg",
-			"music/4.jpg",
-			"music/5.jpg",
-			"music/6.jpg",
-			"music/7.jpg",
-			"music/8.jpg"
-		],
-		"description": "Music is everywhere, in your own headphones, in shops, in buses, In the morning after I wake up I turn on the music first and after i start usually stuffs.  Music is proved to raise dopamine levels in our body -that's the small (or big) chill you feel when you listen to your favorite songs."
-	}],
-	"quotes": {
-		"profile": {
+	"skills":[
+		{	"index": 3,
+			"skill": "HTML",
+			"level": 4
+		},{	
+			"index": 5,
+			"skill": "Sass/CSS",
+			"level": 4
+		},{
+			"index": 0,
+			"skill": "Javascript",
+			"level": 4
+		},{
+			"index": 1,
+			"skill": "Webpack MODULE BUNDLER",
+			"level": 2
+		},{
+			"index": 4,
+			"skill": "MySQL",
+			"level": 2
+		},{
+			"index": 11,
+			"skill": "JSON",
+			"level": 4
+		},{
+			"index": 7,
+			"skill": "Jquery",
+			"level": 4
+		},{
+			"index": 7,
+			"skill": "React JS",
+			"level": 2
+		},{
+			"index": 9,
+			"skill": "Bootstrap",
+			"level": 4
+		},{
+			"index": 8,
+			"skill": "MVC Pattern",
+			"level": 2
+		},{
+			"index": 6,
+			"skill":"Extjs",
+			"level": 2
+		},{
+			"index": 12,
+			"skill": "Sencha Touch",
+			"level": 2
+		},{
+			"index": 13,
+			"skill": "Polymer by Google",
+			"level": 2
+		},{
+			"index": 10,
+			"skill": "Grunt.JS",
+			"level": 2
+		},{
+			"index": 14,
+			"skill": "Velocity.JS - animations JS framework",
+			"level": 3
+		},{
+			"index": 15,
+			"skill": "Handlebars.JS/Nunjucks - template language",
+			"level": 3
+		},{
+			"index": 16,
+			"skill": "MeteorJS",
+			"level": 3
+		},{
+			"index": 17,
+			"skill": "MongoDB",
+			"level": 2
+		}
+	],
+	"languages":[
+		{
+			"language": "Romanian",
+			"level": 5,
+			"usage": "Native speaker "
+		},{
+			"language": "English",
+			"level": 4,
+			"usage": "professional proficiency "
+		},{
+			"language": "Dutch",
+			"level": 1,
+			"usage": "learning in progress "
+		}
+	],
+	"tools":[
+		{	
+			"index": null,
+			"tool": "Windows",
+			"level": 5
+		},{
+			"index": null,
+			"tool": "MacOS",
+			"level": 5
+		},{	
+			"index": null,
+			"tool": "MS Office",
+			"level": 3
+		},{
+			"index": null,
+			"tool": "G-suite",
+			"level": 3
+			},{	
+			"index": null,
+			"tool": "Web-kit Browsers",
+			"level":4
+		},{	
+			"index": null,
+			"tool": "NotePad++",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Firefox",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Sublimetext",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Git",
+			"level": 5
+		},{	
+			"index": null,
+			"tool": "Adobe Photoshop",
+			"level": 4
+		},{	
+			"index": null,
+			"tool": "Eclipse",
+			"level": 2
+		},{	
+			"index": null,
+			"tool": "LightRoom",
+			"level": 3
+		},{	
+			"index": null,
+			"tool": "Ubuntu",
+			"level": 3
+		},{	
+			"index": null,
+			"tool": "Filezilla",
+			"level": 2
+		},{	
+			"index": null,
+			"tool": "WebStrorm",
+			"level": 3
+		},{
+			"index": null,
+			"tool": "Visual Code",
+			"level": 3
+		}
+	],
+	"interests":[
+		{
+			"title":"Cycling",
+			"images": ["cycling/1.jpg",
+					  "cycling/2.jpg",
+					  "cycling/3.jpg",
+					  "cycling/4.jpg",
+					  "cycling/5.jpg",
+					  "cycling/6.jpg",
+					  "cycling/7.jpg",
+					  "cycling/8.jpg"
+			],
+			"description":"When I was five years old am learned to ride a bike. At the beginning I ride only in the neighborhood but over time we have expanded the reach to conquer mountains and I see many beautiful areas on two wheels at the present I ride approximately 3000 km per year"
+			
+		},{
+			"title": "Hiking",
+			"images": ["hiking/1.jpg",
+					  "hiking/2.jpg",
+					  "hiking/3.jpg",
+					  "hiking/4.jpg",
+					  "hiking/5.jpg",
+					  "hiking/6.jpg",
+					  "hiking/7.jpg",
+					  "hiking/8.jpg"],
+			"description":"It's an extension of something we all do naturally and every day. I love fresh air, hearing the sounds of birds singing, waterfalls rushing, rivers running, wind blowing in the trees and stuff like that. I also like the way the trees smell. "
+		},{
+			"title":"Timelapse",
+			"images":["timelapse/1.jpg",
+					  "timelapse/2.jpg",
+					  "timelapse/3.jpg",
+					  "timelapse/4.jpg",
+					  "timelapse/5.jpg",
+					  "timelapse/6.jpg",
+					  "timelapse/7.jpg",
+					  "timelapse/8.jpg"],
+			"description":"I love time-lapse because it gives you the opportunity to play with time, you can make the time pass more quickly. When I do photos for time-lapse spend some time for yourself where you can rinse your mind. I can watch the motion of the world in a way that is otherwise impossible.PS: check my Youtube channel"
+		},{
+			"title":"Classic Cars",
+			"images": ["cars/1.jpg",
+					  "cars/2.jpg",
+					  "cars/3.jpg",
+					  "cars/4.jpg",
+					  "cars/5.jpg",
+					  "cars/6.jpg",
+					  "cars/7.jpg",
+					  "cars/8.jpg"],
+			"description":"An classic car is like a novel, it has own story. With such a classic machine can keep a living piece of history and enjoy relaxing rides in unique atmosphere. I am convinced that in one day I'll be the proud owner of a classic car. "
+		},{
+			"title": "Music",
+			"images": ["music/1.jpg",
+					  "music/2.jpg",
+					  "music/3.jpg",
+					  "music/4.jpg",
+					  "music/5.jpg",
+					  "music/6.jpg",
+					  "music/7.jpg",
+					  "music/8.jpg"],
+			"description": "Music is everywhere, in your own headphones, in shops, in buses, In the morning after I wake up I turn on the music first and after i start usually stuffs.  Music is proved to raise dopamine levels in our body -that's the small (or big) chill you feel when you listen to your favorite songs."
+		}
+	],
+	"quotes":{
+		"profile":{
 			"text": "\"Intelligence without ambition is a bird without wings.\"",
-			"author": "Salvador Dali"
+            "author": "Salvador Dali"
 		},
-		"skills": {
-			"text": "\"Insanity: doing the same thing over and over again and expecting different results.\"",
-			"author": "Albert Einstein"
+		"skills":{
+			"text":"\"Insanity: doing the same thing over and over again and expecting different results.\"",
+			"author":"Albert Einstein"
 		},
-		"interests": {
-			"text": "\"A man who limits his interests, limits his life.\"",
-			"author": "Vincent Price"
+		"interests":{
+			"text":"\"A man who limits his interests, limits his life.\"",
+			"author":"Vincent Price"
 		},
-		"contact": {
-			"text": "\"Physical contact is a human necessity.\"",
-			"author": "David Byrne"
+		"contact":{
+			"text":"\"Physical contact is a human necessity.\"",
+			"author":"David Byrne"
 		},
-		"education": {
-			"text": "\"I've never let my school interfere with my education.\"",
-			"author": "Mark Twain"
+		"education":{
+			"text":"\"I've never let my school interfere with my education.\"",
+			"author":"Mark Twain"
 		},
-		"careers": {
-			"text": "\"Careers very rarely are a waste of time, jobs usually are.\"",
-			"author": "Donald Glover"
+		"careers":{
+			"text":"\"Careers very rarely are a waste of time, jobs usually are.\"",
+			"author":"Donald Glover"
 		},
-		"freetime": {
-			"quote": "\"Is freedom anything else than the right to live as we wish? Nothing else.\"",
-			"text": "Epictetus"
+		"freetime":{
+			"quote":"\"Is freedom anything else than the right to live as we wish? Nothing else.\"",
+			"text":"Epictetus"
 		},
-		"test": {
-			"text": "",
-			"author": ""
+		"test":{
+			"text":"",
+			"author":""
 		}
 	}
 }
