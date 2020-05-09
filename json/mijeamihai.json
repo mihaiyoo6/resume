@@ -135,12 +135,12 @@
 		"text":"mijeamihai.com",
 		"icon": "ion-link",
 		"title": "Personal website",
-		"link_type": "http://mijeamihai.com"	
+		"link_type": "https://mijeamihai.com"	
 	},{
-		"text":"linkedin.com/in/mijeamihai",
+		"text":"linkedin.com/in/mihaimijea",
 		"icon":"ion-social-linkedin-outline",
 		"title": "Linkedin",
-		"link_type": "https://goo.gl/Q9wjkM"
+		"link_type": "https://www.linkedin.com/in/mihaimijea/"
 			
 	},{
 		"text": "instagram.com/mihaiyoo6",
