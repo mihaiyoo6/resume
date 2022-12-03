@@ -147,3 +147,31 @@ padding: 5px;
 paper-ripple {
   color: #17B1D2;
 }
+
+.jiggle-animation {
+	animation-name: jiggle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jiggle {
+    0,
+    65% {
+        transform: scale(1, 1);
+    }
+    2% {
+        transform: scale(0.9, 1.1) translatey(-5px);
+    }
+    4% {
+        transform: scale(0.8, 1.2) translatey(-10px);
+    }
+    6% {
+        transform: scale(0.9, 1.1) translatey(-15px);
+    }
+    8% {
+        transform: scale(1.1, 1.2) translatey(-10px);
+    }
+    11% {
+        transform: scale(1.1, 1.1) translatey(-5px);
+    }
+}
