@@ -1,49 +1,82 @@
-html, body {  font-family: 'Open Sans', sans-serif !important;}
+html,
+body {
+	font-family: 'Open Sans', sans-serif !important;
+}
 
 /*******************************************/
 
 .jumbotron {
-	background: no-repeat center right fixed; /* url(images/background.jpg) */
+	background: no-repeat center right fixed;
+	/* url(images/background.jpg) */
 	/*background-image: url(images/tower_scope_animation.gif); */
-	
-	-webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-	
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	
-/*	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
+
+	/*	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale')";
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/background.jpg', sizingMethod='scale');	*/
-	
+
 	margin-bottom: 0px;
 	padding: 0px;
-}  
+}
 
-.jumbotron .overlay { background-color: #17B1D2; position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; opacity: 0.5; filter:alpha(opacity=50); z-index: 2; }
+.jumbotron .overlay {
+	background-color: #17B1D2;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	z-index: 2;
+}
 
-.jumbotron .container { position: relative; top: 28%; z-index: 4; text-align: center; }
-.jumbotron .container > * { text-align: center; color: #FFFFFF; }
-.jumbotron .container h1 { padding-bottom: 20px; border-bottom: 1px solid #FFFFFF; border-bottom-color: rgba(255,255,255,0.35); display: inline-block; }
-.jumbotron .container .lead { font-size: 28px; }
+.jumbotron .container {
+	position: relative;
+	top: 28%;
+	z-index: 4;
+	text-align: center;
+}
 
-.menu_down{
+.jumbotron .container>* {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.jumbotron .container h1 {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #FFFFFF;
+	border-bottom-color: rgba(255, 255, 255, 0.35);
+	display: inline-block;
+}
+
+.jumbotron .container .lead {
+	font-size: 28px;
+}
+
+.menu_down {
 	position: absolute;
 	/*bottom:0;*/
 	right: 0;
 	z-index: 16;
 	margin: 0 auto;
 	width: 100%;
-    webkit-transition: all 1.3s;
-    -moz-transition: all 1.3s;
-    -ms-transition: all 1.3s;
-    -o-transition: all 1.3s;
-    transition: all 1.3s;
+	webkit-transition: all 1.3s;
+	-moz-transition: all 1.3s;
+	-ms-transition: all 1.3s;
+	-o-transition: all 1.3s;
+	transition: all 1.3s;
 }
-.menu_upp{
+
+.menu_upp {
 	position: fixed;
 	top: 0;
 	right: 0;
@@ -51,45 +84,48 @@ html, body {  font-family: 'Open Sans', sans-serif !important;}
 	background-color: #17B1D2;
 	z-index: 6;
 	-webkit-transition: all 1.3s;
-    -moz-transition: all 1.3s;
-    -ms-transition: all 1.3s;
-    -o-transition: all 1.3s;
-    transition: all 1.3s;
+	-moz-transition: all 1.3s;
+	-ms-transition: all 1.3s;
+	-o-transition: all 1.3s;
+	transition: all 1.3s;
 }
-.menu_item{
+
+.menu_item {
 	-webkit-transition: all 1.3s;
-    -moz-transition: all 1.3s;
-    -ms-transition: all 1.3s;
-    -o-transition: all 1.3s;
-    transition: all 1.3s;
+	-moz-transition: all 1.3s;
+	-ms-transition: all 1.3s;
+	-o-transition: all 1.3s;
+	transition: all 1.3s;
 
 }
-.menu_item > a > i {
+
+.menu_item>a>i {
 	font-size: 40px;
-	color: white;	
+	color: white;
 	opacity: 1;
 	/*-webkit-transition: all 1.3s;
     -moz-transition: all 1.3s;
     -ms-transition: all 1.3s;
     -o-transition: all 1.3s;
-    transition: all 1.3s;*/	
+    transition: all 1.3s;*/
 }
-.page{ 	
+
+.page {
 	background: no-repeat center right fixed;
 
-	
-	-webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-	
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	margin-bottom: 0px;
 	padding: 0px;
-	
+
 	/*-webkit-box-shadow: inset 0px 5px 5px 3px rgba(0,0,0,0.68);
 	-moz-box-shadow: inset 0px 5px 5px 3px rgba(0,0,0,0.68);
 	box-shadow: inset 0px 5px 5px 3px rgba(0,0,0,0.68);*/
@@ -103,75 +139,88 @@ html, body {  font-family: 'Open Sans', sans-serif !important;}
 }
 
 .nav>li>a {
-position: relative;
-display: block;
-padding: 5px;
+	position: relative;
+	display: block;
+	padding: 5px;
 }
-.navbar .nav > li a span,
-.navbar .nav > li a span { 
+
+.navbar .nav>li a span,
+.navbar .nav>li a span {
 	font-size: 1.5em;
 	font-weight: 200;
 	padding: 10px;
 	-webkit-transition: all 1.3s;
-    -moz-transition: all 1.3s;
-    -ms-transition: all 1.3s;
-    -o-transition: all 1.3s;
-    transition: all 1.3s;
+	-moz-transition: all 1.3s;
+	-ms-transition: all 1.3s;
+	-o-transition: all 1.3s;
+	transition: all 1.3s;
 }
-.navbar .nav > li a:hover
-.navbar .nav > li a:focus { 
-	font-size: 1.2em;	
+
+.navbar .nav>li a:hover .navbar .nav>li a:focus {
+	font-size: 1.2em;
 	-webkit-transition: all 1.3s;
-    -moz-transition: all 1.3s;
-    -ms-transition: all 1.3s;
-    -o-transition: all 1.3s;
-    transition: all 1.3s;
+	-moz-transition: all 1.3s;
+	-ms-transition: all 1.3s;
+	-o-transition: all 1.3s;
+	transition: all 1.3s;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
-  text-decoration: none;
-  background-color: transparent;
+.nav>li>a:hover,
+.nav>li>a:focus {
+	text-decoration: none;
+	background-color: transparent;
 
 }
+
 .navbar-toggle .icon-bar,
-.navbar-toggle .icon-bar { background: white; }
+.navbar-toggle .icon-bar {
+	background: white;
+}
+
 .navbar-toggle:hover .icon-bar,
-.navbar-toggle:focus .icon-bar { background: #222222; }
+.navbar-toggle:focus .icon-bar {
+	background: #222222;
+}
 
 
-.item{
+.item {
 	color: white;
 	vertical-align: super;
 }
+
 paper-ripple {
-  color: #17B1D2;
+	color: #17B1D2;
 }
 
-.jiggle-animation {
-	animation-name: jiggle;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+.button {
+	position: relative;
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: 2px solid white;
+	border-radius: 1000px;
+	padding: 10px 20px;
+	margin: 40px;
+	box-shadow: 0 2px 5px 0 rgba(3, 6, 26, 0.15);
+	transition: .5s all ease-in-out;
 }
 
-@keyframes jiggle {
-    0,
-    65% {
-        transform: scale(1, 1);
-    }
-    2% {
-        transform: scale(0.9, 1.1) translatey(-5px);
-    }
-    4% {
-        transform: scale(0.8, 1.2) translatey(-10px);
-    }
-    6% {
-        transform: scale(0.9, 1.1) translatey(-15px);
-    }
-    8% {
-        transform: scale(1.1, 1.2) translatey(-10px);
-    }
-    11% {
-        transform: scale(1.1, 1.1) translatey(-5px);
-    }
+.button:hover {
+	cursor: pointer;
+	background: white;
+	color: #1F4141;
+	animation: none;
+}
+
+.button-pulse {
+	animation: pulse 2s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+	box-shadow: 0 0 0 0 white;
+}
+
+@keyframes pulse {
+	to {
+		box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
+	}
 }
