@@ -224,3 +224,16 @@ paper-ripple {
 		box-shadow: 0 0 0 18px rgba(255, 255, 255, 0);
 	}
 }
+
+.button-float {
+	animation: float 1.5s linear alternate infinite;
+  }
+  
+  @keyframes float {
+	  50% {
+	  transform: translateY(-px);
+	}
+	100% {
+	  transform: translateY(-18px);
+	}
+  }
